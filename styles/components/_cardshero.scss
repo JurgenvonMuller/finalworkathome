@@ -1,22 +1,37 @@
 .hero {
-  background-color: rgb(18, 185, 46);
-  // .container {
-  //     .hero_cards {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     max-width: 400px;
-  //     background-color: rgb(184, 162, 41);
-  //     .cards_img {
-  //       background-color: rgb(44, 133, 121);
-  //     }
-  //     .cards_title {
-  //       @include hero-text;
-  //     }
-  //     .cards_text {
-  //       font-size:24px;
-
-  //     }
-  //   }
-  // }
+  background-color: white;
+  .container {
+    background-color: $gradient_red;
+    border-left: 2px solid  red;
+    border-right: 2px solid  red;
+    .hero_inner_cards {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+      max-width: 400px;
+      background-color: lightcyan;
+        .card_img {
+          display: block;
+          position:relative;
+          max-width: 92px;
+          height: 92px;
+          border-radius: 24px ;
+          background-color: var(--basic-white, #FFF);
+          .img_content {
+            position: absolute;
+            top:14px;
+            left:14px;
+          }
+        }
+        .cards_title {
+          @include hero-red-regular;
+        }
+        .cards_text {
+          font-size:24px;
+        }
+    }
+    }
+      
+  }
 }
   

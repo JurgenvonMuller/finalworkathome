@@ -63,18 +63,56 @@ table {
   src: url(../../fonts/static/Montserrat-Bold.ttf);
   font-weight: 400;
 }
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: Montserrat;
-  box-sizing: border-box;
 }
 
 .container {
   max-width: 1920px;
-  background-color: red;
   margin: 0 auto;
-  border: 3px solid rgb(145, 30, 30);
 }
 
 .hero {
-  background-color: rgb(18, 185, 46);
+  background-color: white;
+}
+.hero .container {
+  background-color: var(--gradient-red, linear-gradient(310deg, #F0145A 0%, #693264 100%));
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+.hero .container .hero_inner_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero .container .hero_inner_cards .card {
+  max-width: 400px;
+  background-color: lightcyan;
+}
+.hero .container .hero_inner_cards .card .card_img {
+  display: block;
+  position: relative;
+  max-width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background-color: var(--basic-white, #FFF);
+}
+.hero .container .hero_inner_cards .card .card_img .img_content {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.hero .container .hero_inner_cards .card .cards_title {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+}
+.hero .container .hero_inner_cards .card .cards_text {
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */

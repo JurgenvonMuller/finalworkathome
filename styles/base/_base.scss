@@ -1,13 +1,12 @@
-
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: Montserrat;
-  box-sizing: border-box;
+  
 
 }
 .container {
   max-width: 1920px;
-  background-color: red;
   margin: 0 auto;
-  border: 3px solid rgb(145, 30, 30);
-
 }

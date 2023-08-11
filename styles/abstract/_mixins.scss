@@ -1,18 +1,93 @@
 // -------------стилизация текста -------------------
-@mixin hero-text {
-    font-family: Montserrat;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    color: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+// --------------------общие атрибуты-------------
+@mixin text_style_700 {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
 }
-
-@mixin large-text {
-  font: {
-    family: Arial;
-    size: 20px;
-    weight: bold;
+// -----------------HERO---------------
+@mixin hero-red-regular {
+  @include text_style_700;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // line-height: normal;
+  // font-weight: 700;
+  font-size: 38px;
+  color: $gradient_redtext_heroregular;
+}
+// ---------------------H2-------------
+@mixin h2-regular {
+  @include text_style_700;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // line-height: normal;
+  // font-weight: 700;
+  font-size: 30px;
+  color: $h2_h3_caps_h4_regular;
+}
+// --------------------------h3-------------------
+@mixin h3_caps-regular {
+  @include text_style_700;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // line-height: normal;
+  // font-weight: 700;
+  font-size: 22px;
+  color: $h2_h3_caps_h4_regular;
   }
-  color: #ff0000;
+@mixin h4_regular {
+  @include text_style_700;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // line-height: normal;
+  // font-weight: 700;
+  font-size: 16px;
+  color: $h2_h3_caps_h4_regular;
+}
+@mixin text_style_400 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+}
+@mixin paragraf {
+  @include text_style_400;
+  font-size: 16px;
+  line-height: 162.5%;
+}
+@mixin ul_ol_list {
+  @include text_style_400;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: 400;
+  font-size: 18px;
+  line-height: 144.444%;
+  color: $paragraf_ul_ol_list;
+
+}
+@mixin link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+
+}
+@mixin link_regular {
+  @include link;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 20px; /* 125% */
+  color: $color_active_regular;
+}
+@mixin link_active {
+  @include link;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 20px; /* 125% */
+  color: $color_accent;
 }
