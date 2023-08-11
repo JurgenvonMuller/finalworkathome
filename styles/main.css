@@ -62,4 +62,12 @@ table {
   font-family: "MontserratRegular";
   src: url(../../fonts/static/Montserrat-Bold.ttf);
   font-weight: 400;
+}
+html {
+  font-family: Montserrat;
+}
+
+.title {
+  background-color: red;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
