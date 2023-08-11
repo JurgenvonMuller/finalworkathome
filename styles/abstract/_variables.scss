@@ -1,0 +1,17 @@
+/// @see https://open-props.style/
+$ff-sans: var(--font-sans);
+// ----------------------------------------------------------colors------------------
+$color_background_main:var(--main-regular, #323264);
+$color_background_alt: var(--main-regular, #323264);
+$color_background_soft:var(--main-soft, #686887);
+// ------------------------------------------------------------accent-----------------------
+$color_accent:var(--accent, #F0145A);
+// -------------------------------------------------------color active ------------------
+$color_active_regular:var(--active-regular, #24A3FF);
+$color_active_hover:var(--active-hover, #0085FF);
+$color_active_active: var(--active-active, #006CCF)
+// ------------------------------------------------------colors gray---------------------
+$color_gray_bg:var(--grey-bg, #F5F5FA);
+$color_gray_bgalt: var(--grey-bg-alt, #EDEDF7);
+$color_gray_text: var(--grey-text, #B3B3BA);
+$color_gray_separator:var(--grey-separator, #E6E6F0);
