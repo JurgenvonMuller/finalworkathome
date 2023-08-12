@@ -14,11 +14,13 @@
           text-align: left;
         }
         .inner_servises {
+          // синий цвет должен быть тут и после ховер - красный актив
           @include h3_caps-regular;
           color: $color_accent;
           position: relative;
           margin-bottom: 10px;
           &::after {
+            // синяя картинка должна быть
             content: url(../../images/hero-cards/Arrow.svg);
             position: absolute;
             top: 1px;
@@ -28,6 +30,7 @@
           }     
         }    
           .inner_servises:hover, .inner_servises:hover::after {
+            // --заполнить цвета и смену картинок---------------------------------
             color: orange;
             content: "";
           }
