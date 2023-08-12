@@ -4,34 +4,82 @@
     background-color: $gradient_red;
     border-left: 2px solid  red;
     border-right: 2px solid  red;
-    .hero_inner_cards {
+    .hero_inner {
       display: flex;
       flex-wrap: wrap;
-      .card {
-      max-width: 400px;
-      background-color: lightcyan;
-        .card_img {
-          display: block;
-          position:relative;
-          max-width: 92px;
-          height: 92px;
-          border-radius: 24px ;
-          background-color: var(--basic-white, #FFF);
-          .img_content {
-            position: absolute;
-            top:14px;
-            left:14px;
-          }
-        }
-        .cards_title {
-          @include hero-red-regular;
-        }
-        .cards_text {
-          font-size:24px;
-        }
-    }
-    }
+      justify-items: left;
+      padding: 0 160px 0 160px;
       
+        .inner_cards_title {
+          @include hero-red-regular;
+          color: $gradient_redtext_heroregular;
+          text-align: left;
+        }
+        .inner_servises {
+          @include h3_caps-regular;
+          color: $color_accent;
+          position: relative;
+          margin-bottom: 10px;
+          &::after {
+            content: url(../../images/hero-cards/Arrow.svg);
+            position: absolute;
+            top: 2px;
+            width: 12px;
+            height: 12px;
+            transition: opacity 0.3s ease;
+          }     
+        }    
+          .inner_servises:hover, .inner_servises:hover::after {
+            color: orange;
+            content: "";
+          }
+         
+
+        
+      .hero_inner_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: left;
+        .card {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 1 30%;
+          background-color:rgb(235, 224, 224);
+          margin: 60px 60px 0 0;
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+          &:nth-child(6) {
+            margin-right: 0;
+          }
+          .card_img {
+            display: block;
+            position:relative;
+            width: 92px;
+            height: 92px;
+            border-radius: 24px ;
+            background-color: var(--basic-white, #FFF);
+            .img_content {
+              position: absolute;
+              top:14px;
+              left:14px;
+            }
+          }
+          .card_description{
+            .cards_title {
+              @include h3_caps-regular;
+              color: $color_active_regular;
+              margin: 30px 0 15px 0;
+            }
+            .cards_text {
+              @include paragraf;
+              color: $basic_white;
+            }
+          }
+          
+        }
+      }
+    }
   }
 }
   

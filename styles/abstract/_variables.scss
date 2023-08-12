@@ -2,6 +2,7 @@
 $color_background_main_alt: var(--main-regular, #323264);
 // $color_background_alt: var(--main-regular, #323264);
 $color_background_soft:var(--main-soft, #686887);
+$basic_white: var(--basic-white, #FFF);
 // ------------------------------------------------------------accent-----------------------
 $color_accent:var(--accent, #F0145A);
 // -------------------------------------------------------color active ------------------
@@ -30,3 +31,10 @@ $h2_h3_caps_h4_regular: var(--main-regular, #323264);
 $paragraf_ul_ol_list: var(--black, #000);
 // $unord_list: var(--black, #000);
 // $order_list: var(--basic-black, #000);
+
+// ------------------------------figures---------------------------
+// $arrow: <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+// <path d="M3.5 2L8 6.5L3.5 11" stroke="#F0145A" stroke-width="2"/>
+// </svg>;
+
+// $arrow: '#{"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\"><path d=\"M3.5 2L8 6.5L3.5 11\" stroke=\"#F0145A\" stroke-width=\"2\"/></svg>"}';

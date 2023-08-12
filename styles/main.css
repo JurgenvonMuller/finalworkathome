@@ -84,35 +84,163 @@ html {
   border-left: 2px solid red;
   border-right: 2px solid red;
 }
-.hero .container .hero_inner_cards {
+.hero .container .hero_inner {
   display: flex;
   flex-wrap: wrap;
+  justify-items: left;
+  padding: 0 160px 0 160px;
 }
-.hero .container .hero_inner_cards .card {
-  max-width: 400px;
-  background-color: lightcyan;
-}
-.hero .container .hero_inner_cards .card .card_img {
-  display: block;
-  position: relative;
-  max-width: 92px;
-  height: 92px;
-  border-radius: 24px;
-  background-color: var(--basic-white, #FFF);
-}
-.hero .container .hero_inner_cards .card .card_img .img_content {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-}
-.hero .container .hero_inner_cards .card .cards_title {
+.hero .container .hero_inner .inner_cards_title {
   font-family: Montserrat;
   font-style: normal;
   line-height: normal;
   font-weight: 700;
   font-size: 38px;
   color: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+  text-align: left;
 }
-.hero .container .hero_inner_cards .card .cards_text {
-  font-size: 24px;
+.hero .container .hero_inner .inner_servises {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent, #F0145A);
+  position: relative;
+  margin-bottom: 10px;
+}
+.hero .container .hero_inner .inner_servises::after {
+  content: url(../../images/hero-cards/Arrow.svg);
+  position: absolute;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.3s ease;
+}
+.hero .container .hero_inner .inner_servises:hover, .hero .container .hero_inner .inner_servises:hover::after {
+  color: orange;
+  content: "";
+}
+.hero .container .hero_inner .hero_inner_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: left;
+}
+.hero .container .hero_inner .hero_inner_cards .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+  background-color: rgb(235, 224, 224);
+  margin: 60px 60px 0 0;
+}
+.hero .container .hero_inner .hero_inner_cards .card:nth-child(3) {
+  margin-right: 0;
+}
+.hero .container .hero_inner .hero_inner_cards .card:nth-child(6) {
+  margin-right: 0;
+}
+.hero .container .hero_inner .hero_inner_cards .card .card_img {
+  display: block;
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background-color: var(--basic-white, #FFF);
+}
+.hero .container .hero_inner .hero_inner_cards .card .card_img .img_content {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.hero .container .hero_inner .hero_inner_cards .card .card_description .cards_title {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--active-regular, #24A3FF);
+  margin: 30px 0 15px 0;
+}
+.hero .container .hero_inner .hero_inner_cards .card .card_description .cards_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  color: var(--basic-white, #FFF);
+}
+
+@font-face {
+  font-family: "_icon";
+  src: url("../../fonts/_icon.eot?d96l49");
+  src: url("fonts/_icon.eot?d96l49#iefix") format("embedded-opentype"), url("../../fonts/_icon.ttf?d96l49") format("truetype"), url("../../fonts/_icon.woff?d96l49") format("woff"), url("../../fonts/_icon.svg?d96l49#_icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=-icon-]::before [class*=" -icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "_icon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.-icon-apple:before {
+  content: "\e900";
+}
+
+.-icon-css3-alt:before {
+  content: "\e901";
+}
+
+.-icon-facebook:before {
+  content: "\e902";
+}
+
+.-icon-github:before {
+  content: "\e903";
+}
+
+.-icon-google:before {
+  content: "\e904";
+}
+
+.-icon-html5:before {
+  content: "\e905";
+}
+
+@font-face {
+  font-family: "_arrow";
+  src: url("fonts/_arrow.eot?h1arhx");
+  src: url("fonts/_arrow.eot?h1arhx#iefix") format("embedded-opentype"), url("/fonts/arrow_fonts/_arrow.ttf") format("truetype"), url("fonts/_arrow.woff?h1arhx") format("woff"), url("fonts/_arrow.svg?h1arhx#_arrow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=_icon-], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "_arrow" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-Arrow1:before {
+  content: "\e900";
+  color: #f0145a;
 }/*# sourceMappingURL=main.css.map */

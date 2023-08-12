@@ -14,7 +14,7 @@
   // line-height: normal;
   // font-weight: 700;
   font-size: 38px;
-  color: $gradient_redtext_heroregular;
+  // color: $gradient_redtext_heroregular;
 }
 // ---------------------H2-------------
 @mixin h2-regular {
@@ -29,12 +29,11 @@
 // --------------------------h3-------------------
 @mixin h3_caps-regular {
   @include text_style_700;
-  // font-family: Montserrat;
-  // font-style: normal;
-  // line-height: normal;
-  // font-weight: 700;
-  font-size: 22px;
-  color: $h2_h3_caps_h4_regular;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+  // color: $h2_h3_caps_h4_regular;
   }
 @mixin h4_regular {
   @include text_style_700;
