@@ -5,9 +5,7 @@
     border-left: 2px solid  red;
     border-right: 2px solid  red;
     .hero_inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-items: left;
+      display: block;
       padding: 0 160px 0 160px;
       
         .inner_cards_title {

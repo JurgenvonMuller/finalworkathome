@@ -85,9 +85,7 @@ html {
   border-right: 2px solid red;
 }
 .hero .container .hero_inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: left;
+  display: block;
   padding: 0 160px 0 160px;
 }
 .hero .container .hero_inner .inner_cards_title {
