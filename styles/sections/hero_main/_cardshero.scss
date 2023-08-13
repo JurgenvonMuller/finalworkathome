@@ -1,7 +1,7 @@
 .hero {
   background-color: $basic_white;
   .container {
-    // background-color: $gradient_red;
+    background-color: $gradient_red;
     border-left: 2px solid  red;
     border-right: 2px solid  red;
     .hero_inner {
@@ -33,7 +33,7 @@
             transition: opacity 0.3s ease;
           }     
         }    
-          .inner_servises:hover  {
+          .inner_servises:hover,  {
             // --замена цвета сервисес ---------------------------------
             color: $color_accent;
           }
@@ -81,6 +81,7 @@
               color: $basic_white;
             }
           }
+          
         }
       }
     }
