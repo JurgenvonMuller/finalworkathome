@@ -2,9 +2,8 @@
   .container {
     .consist_inner {
       display:flex;
-      // padding: 0 280px;
       max-width:  1380px;
-      margin: 0 auto;
+      margin: 60px auto;
 
       .consist_inner_menu {
         padding-right: 60px;
@@ -18,16 +17,21 @@
           li {
           @include hero-red-regular;
           white-space: nowrap;  
+          &:not(:last-child) {
+            margin-bottom:30px;
+          }
           }
         }
       }
       .inner_menu_content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         padding-left: 60px;
         flex: 1 1 54%;
         .menu_content_title {
           @include h2-regular;
+          margin-bottom: 30px;
 
         }
         .menu_content_intro {

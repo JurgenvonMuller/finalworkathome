@@ -263,7 +263,7 @@ html {
 .hero_consis .container .consist_inner {
   display: flex;
   max-width: 1380px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 .hero_consis .container .consist_inner .consist_inner_menu {
   padding-right: 60px;
@@ -283,9 +283,13 @@ html {
   font-size: 38px;
   white-space: nowrap;
 }
+.hero_consis .container .consist_inner .consist_inner_menu ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
 .hero_consis .container .consist_inner .inner_menu_content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-left: 60px;
   flex: 1 1 54%;
 }
@@ -296,6 +300,7 @@ html {
   font-weight: 700;
   font-size: 30px;
   color: #FFF;
+  margin-bottom: 30px;
 }
 .hero_consis .container .consist_inner .inner_menu_content .menu_content_intro {
   font-family: Montserrat;
