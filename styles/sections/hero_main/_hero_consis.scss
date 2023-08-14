@@ -1,0 +1,42 @@
+.hero_consis {
+  .container {
+    .consist_inner {
+      display:flex;
+      // padding: 0 280px;
+      max-width:  1380px;
+      margin: 0 auto;
+
+      .consist_inner_menu {
+        padding-right: 60px;
+        flex: 1 1 17%;
+
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          align-items: flex-end;
+          li {
+          @include hero-red-regular;
+          white-space: nowrap;  
+          }
+        }
+      }
+      .inner_menu_content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        flex: 1 1 54%;
+        .menu_content_title {
+          @include h2-regular;
+
+        }
+        .menu_content_intro {
+          @include text_style_400;
+          color: $basic_white;
+          font-size: 19px;
+          line-height: 157.89%;
+        }
+      }
+    }
+  }
+}

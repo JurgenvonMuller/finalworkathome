@@ -1,27 +1,23 @@
 .hero_header {
   display: block;
   position: relative;
+  background-color: transparent;
   .header_inner {
     display:flex;
     padding: 50px 160px 0 160px;
-   
     .header_logo {
       display: block;
       max-width: 130px;
       .logo_name {
         margin-bottom: 6.5px;
       }
-      
-
     }
     .header_info {
       display: block;
       margin-left: auto;
-
       .header_contacts{
         display: inline-flex;
         color: $basic_white;
-        
         .contacts_lang {
           display: flex;
           .lang_active {
@@ -31,8 +27,12 @@
             width: 33px;
             height: 25px;
             border-radius: 8px;
-            background-color: #e90909;
-            
+            // background-color: #e90909;
+            &:hover {
+              background-color: $color_accent;
+              cursor: pointer;
+              transition: background-color 0.3s;
+            }
             .lang_ua {
               
               @include header_lang_uaruen;
@@ -66,7 +66,6 @@
         ul {
           display: flex;
           justify-content: flex-end;
-          
           li {
           &:not(:last-child) {
             margin-right: 15px;
@@ -74,6 +73,11 @@
             a {
               color: $basic_white;
               text-decoration: none;
+              &:hover {
+                color: $color_accent;
+                cursor: pointer;
+                transition: background-color 0.3s;
+              }
             }
           } 
         }
