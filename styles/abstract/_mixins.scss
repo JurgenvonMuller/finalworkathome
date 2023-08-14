@@ -6,6 +6,7 @@
   line-height: normal;
   font-weight: 700;
 }
+  
 // -----------------HERO---------------
 @mixin hero-red-regular {
   @include text_style_700;
@@ -34,7 +35,7 @@
   text-transform: uppercase;
   
   // color: $h2_h3_caps_h4_regular;
-  }
+}
 @mixin h4_regular {
   @include text_style_700;
   // font-family: Montserrat;
@@ -43,6 +44,15 @@
   // font-weight: 700;
   font-size: 16px;
   color: $h2_h3_caps_h4_regular;
+}
+@mixin header_lang_uaruen {
+  // font-family: Montserrat;
+  // font-style: normal;
+  // line-height: normal;
+  // font-weight: 700;
+  @include text_style_700;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 @mixin text_style_400 {
   font-family: Montserrat;
@@ -90,3 +100,22 @@
   // line-height: 20px; /* 125% */
   color: $color_accent;
 }
+// @mixin point_white {
+//   width: 6px;
+//   height: 6px;
+//   border-radius: 6px;
+// }
+// @mixin point_16 {
+//   width: 16px;
+//   height: 16px;
+//   border-radius: 16px;
+// }
+// @mixin point_16_blue {
+//   @include point_16;
+//   color: #24A3FF
+// }
+// @mixin point_16_lightblue {
+//   @include point_16;
+//   color: #c8cdd1;
+// }
+

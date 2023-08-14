@@ -1,0 +1,83 @@
+.hero_header {
+  display: block;
+  position: relative;
+  .header_inner {
+    display:flex;
+    padding: 50px 160px 0 160px;
+   
+    .header_logo {
+      display: block;
+      max-width: 130px;
+      .logo_name {
+        margin-bottom: 6.5px;
+      }
+      
+
+    }
+    .header_info {
+      display: block;
+      margin-left: auto;
+
+      .header_contacts{
+        display: inline-flex;
+        color: $basic_white;
+        
+        .contacts_lang {
+          display: flex;
+          .lang_active {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 33px;
+            height: 25px;
+            border-radius: 8px;
+            background-color: #e90909;
+            
+            .lang_ua {
+              
+              @include header_lang_uaruen;
+              &:not(:last-child) {
+                margin-right: 14px;
+              }
+            }
+          }
+        }
+        .contacts_date {
+          display: flex;
+          margin-bottom: 16px;
+          .date_addres {
+            display: flex;
+            align-items: center;
+            .point {
+              width: 6px;
+              height: 6px;
+              border-radius: 6px;
+              background-color: $basic_white;
+              margin: 0 6px;
+            }
+            .date_nrphone {
+              @include text_style_700;
+              color: $basic_white;
+            }
+          }
+        }
+      }
+      .header_menu {
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          
+          li {
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+            a {
+              color: $basic_white;
+              text-decoration: none;
+            }
+          } 
+        }
+      }
+    }
+  }
+}
