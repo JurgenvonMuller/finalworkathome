@@ -27,14 +27,14 @@
             width: 33px;
             height: 25px;
             border-radius: 8px;
-            // background-color: #e90909;
+            background-color: $color_accent;
             &:hover {
               background-color: $color_accent;
+              background-color:aquamarine;
               cursor: pointer;
               transition: background-color 0.3s;
             }
-            .lang_ua {
-              
+            .lang {
               @include header_lang_uaruen;
               &:not(:last-child) {
                 margin-right: 14px;

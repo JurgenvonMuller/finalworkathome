@@ -147,6 +147,11 @@ html {
   color: #f0145a;
 }
 
+.hero_main .container .bgc {
+  background: linear-gradient(235deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+  z-index: -20;
+}
+
 .hero_header {
   display: block;
   position: relative;
@@ -181,13 +186,15 @@ html {
   width: 33px;
   height: 25px;
   border-radius: 8px;
+  background-color: #F0145A;
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active:hover {
   background-color: #F0145A;
+  background-color: aquamarine;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active .lang_ua {
+.hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active .lang {
   font-family: Montserrat;
   font-style: normal;
   line-height: normal;
@@ -195,7 +202,7 @@ html {
   font-size: 12px;
   letter-spacing: 1px;
 }
-.hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active .lang_ua:not(:last-child) {
+.hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active .lang:not(:last-child) {
   margin-right: 14px;
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_date {
@@ -285,6 +292,9 @@ html {
 }
 .hero_consis .container .consist_inner .consist_inner_menu ul li:not(:last-child) {
   margin-bottom: 30px;
+}
+.hero_consis .container .consist_inner .consist_inner_menu ul li a {
+  text-decoration: none;
 }
 .hero_consis .container .consist_inner .inner_menu_content {
   display: flex;
@@ -410,10 +420,4 @@ html {
   font-size: 16px;
   line-height: 162.5%;
   color: #FFF;
-}
-
-.hero_main .container .bgc {
-  background: linear-gradient(235deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
-  height: 2000px;
-  z-index: -20;
 }/*# sourceMappingURL=main.css.map */

@@ -18,11 +18,11 @@
 // ------ hero_main----------
 
 // @import "./components/cardshero";
-@import "./sections/hero_main/_header";
+@import "./sections/hero_main/_hero_main";
+@import "./sections/hero_main/header";
 @import "./sections/hero_main/hero_h";
 @import "./sections/hero_main/hero_consis";
 @import "./sections/hero_main/cardshero";
-@import "./sections/hero_main/_hero_main";
 
 // -------bottom_white---------
 @import "./sections/bottom_white/bot_main"
