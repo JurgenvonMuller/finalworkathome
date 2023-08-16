@@ -2,8 +2,9 @@
   display: block;
   position: relative;
   background-color: transparent;
+  z-index: 5;
   .header_inner {
-    display:flex;
+    display: flex;
     padding: 50px 160px 0 160px;
     .header_logo {
       display: block;
@@ -27,17 +28,14 @@
             width: 33px;
             height: 25px;
             border-radius: 8px;
+            background-color: transparent;
+           &:hover {
             background-color: $color_accent;
-            &:hover {
-              background-color: $color_accent;
-              background-color:aquamarine;
-              cursor: pointer;
-              transition: background-color 0.3s;
-            }
+           }
             .lang {
               @include header_lang_uaruen;
               &:not(:last-child) {
-                margin-right: 14px;
+              margin-right: 14px;
               }
             }
           }

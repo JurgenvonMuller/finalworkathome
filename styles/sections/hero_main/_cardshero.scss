@@ -71,6 +71,7 @@
             }
           }
           .card_description{
+         
             .cards_title {
               @include h3_caps-regular;
               color: $color_active_regular;
@@ -81,7 +82,6 @@
               color: $basic_white;
             }
           }
-          
         }
       }
     }

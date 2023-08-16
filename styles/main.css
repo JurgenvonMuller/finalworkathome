@@ -156,6 +156,7 @@ html {
   display: block;
   position: relative;
   background-color: transparent;
+  z-index: 5;
 }
 .hero_header .header_inner {
   display: flex;
@@ -186,13 +187,10 @@ html {
   width: 33px;
   height: 25px;
   border-radius: 8px;
-  background-color: #F0145A;
+  background-color: transparent;
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active:hover {
   background-color: #F0145A;
-  background-color: aquamarine;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_lang .lang_active .lang {
   font-family: Montserrat;
