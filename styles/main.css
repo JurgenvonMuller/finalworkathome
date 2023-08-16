@@ -291,8 +291,23 @@ html {
 .hero_consis .container .consist_inner .consist_inner_menu ul li:not(:last-child) {
   margin-bottom: 30px;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li a {
+.hero_consis .container .consist_inner .consist_inner_menu ul li .inner_menu_secondary {
   text-decoration: none;
+  color: #B3B3BA;
+}
+.hero_consis .container .consist_inner .consist_inner_menu ul li .inner_menu_secondary:hover {
+  color: #F0145A;
+}
+.hero_consis .container .consist_inner .consist_inner_menu ul li .menu_secondary_active {
+  background: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero_consis .container .consist_inner .consist_inner_menu ul li .menu_secondary_active:hover {
+  background: #F0145A;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .hero_consis .container .consist_inner .inner_menu_content {
   display: flex;

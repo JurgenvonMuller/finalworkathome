@@ -15,17 +15,32 @@
           flex-direction: column;
           align-items: flex-end;
           li {
-          @include hero-red-regular;
-          white-space: nowrap;  
-          &:not(:last-child) {
-            margin-bottom:30px;
-          }
-          a {
-            text-decoration: none;
-          }
+            @include hero-red-regular;
+            white-space: nowrap;  
+              &:not(:last-child) {
+              margin-bottom:30px;
+            }
+            .inner_menu_secondary {
+              text-decoration: none;
+              color: $color_gray_text;
+              &:hover {
+                color: $color_accent;
+              }
+            }
+            .menu_secondary_active {
+              background: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
+              background-clip: text;
+              // только в таком варианте в ХРОМе заработало-----------
+              -webkit-text-fill-color: transparent;
+              &:hover {
+                background: $color_accent;
+              background-clip: text;
+              }
+            }
           }
         }
       }
+      
       .inner_menu_content {
         display: flex;
         flex-direction: column;
