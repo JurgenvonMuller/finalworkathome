@@ -3,8 +3,10 @@
   position: relative;
   background-color: transparent;
   z-index: 5;
-  .container {
+  .container_header {
     max-width: 1920px;
+    padding: 0px 0px; 
+    margin: 0px auto;
   
     .header_inner {
     display: flex;
