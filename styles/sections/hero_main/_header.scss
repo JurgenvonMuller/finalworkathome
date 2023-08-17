@@ -3,7 +3,10 @@
   position: relative;
   background-color: transparent;
   z-index: 5;
-  .header_inner {
+  .container {
+    max-width: 1920px;
+  
+    .header_inner {
     display: flex;
     padding: 50px 160px 0 160px;
     .header_logo {
@@ -29,9 +32,9 @@
             height: 25px;
             border-radius: 8px;
             background-color: transparent;
-           &:hover {
+            &:hover {
             background-color: $color_accent;
-           }
+            }
             .lang {
               @include header_lang_uaruen;
               &:not(:last-child) {
@@ -80,6 +83,7 @@
           } 
         }
       }
+    }
     }
   }
 }

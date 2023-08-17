@@ -71,12 +71,6 @@ html {
   font-family: Montserrat;
 }
 
-.container {
-  max-width: 2040px;
-  padding: 0 60px;
-  margin: 0 auto;
-}
-
 @font-face {
   font-family: "_icon";
   src: url("../../fonts/_icon.eot?d96l49");
@@ -148,9 +142,13 @@ html {
   color: #f0145a;
 }
 
-.hero_main .container .bgc {
+.hero_main .bgc {
   background: linear-gradient(235deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
   z-index: -20;
+}
+.hero_main .bgc .container {
+  width: 1920px;
+  margin: 0 auto;
 }
 
 .hero_header {
