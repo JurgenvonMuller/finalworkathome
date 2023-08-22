@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -142,13 +143,22 @@ html {
   color: #f0145a;
 }
 
-.hero_main .bgc {
-  background: linear-gradient(235deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
-  z-index: -20;
+.footer_point_gray {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #B3B3BA;
 }
-.hero_main .bgc .container {
-  width: 1920px;
+
+.hero_main .container {
+  max-width: 1920px;
   margin: 0 auto;
+}
+.hero_main .container .bgc {
+  background: linear-gradient(235deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: -10;
 }
 
 .hero_header {
@@ -247,9 +257,21 @@ html {
   top: -122px;
   justify-content: center;
 }
+.hero_h .svg-container {
+  position: relative;
+}
 .hero_h .svg-container .svg-content {
   width: 100%;
   height: 100%;
+}
+.hero_h .svg-container .svg-scroll {
+  position: relative;
+  left: 50%;
+  top: -72px;
+}
+.hero_h .svg-container .svg-scroll:hover {
+  cursor: pointer;
+  content: "url(../../../images/header/Scroll-active.svg)";
 }
 .hero_h .hero_h_title {
   display: flex;
@@ -264,22 +286,22 @@ html {
   color: #FFF;
 }
 
-.hero_consis .container .consist_inner {
+.hero_consis .consist_inner {
   display: flex;
   max-width: 1380px;
   margin: 60px auto;
 }
-.hero_consis .container .consist_inner .consist_inner_menu {
+.hero_consis .consist_inner .consist_inner_menu {
   padding-right: 60px;
   flex: 1 1 17%;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul {
+.hero_consis .consist_inner .consist_inner_menu ul {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-end;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li {
+.hero_consis .consist_inner .consist_inner_menu ul li {
   font-family: Montserrat;
   font-style: normal;
   line-height: normal;
@@ -287,35 +309,35 @@ html {
   font-size: 38px;
   white-space: nowrap;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li:not(:last-child) {
+.hero_consis .consist_inner .consist_inner_menu ul li:not(:last-child) {
   margin-bottom: 30px;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li .inner_menu_secondary {
+.hero_consis .consist_inner .consist_inner_menu ul li .inner_menu_secondary {
   text-decoration: none;
   color: #B3B3BA;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li .inner_menu_secondary:hover {
+.hero_consis .consist_inner .consist_inner_menu ul li .inner_menu_secondary:hover {
   color: #F0145A;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li .menu_secondary_active {
+.hero_consis .consist_inner .consist_inner_menu ul li .menu_secondary_active {
   background: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero_consis .container .consist_inner .consist_inner_menu ul li .menu_secondary_active:hover {
+.hero_consis .consist_inner .consist_inner_menu ul li .menu_secondary_active:hover {
   background: #F0145A;
   -webkit-background-clip: text;
           background-clip: text;
 }
-.hero_consis .container .consist_inner .inner_menu_content {
+.hero_consis .consist_inner .inner_menu_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 60px;
   flex: 1 1 54%;
 }
-.hero_consis .container .consist_inner .inner_menu_content .menu_content_title {
+.hero_consis .consist_inner .inner_menu_content .menu_content_title {
   font-family: Montserrat;
   font-style: normal;
   line-height: normal;
@@ -324,7 +346,7 @@ html {
   color: #FFF;
   margin-bottom: 30px;
 }
-.hero_consis .container .consist_inner .inner_menu_content .menu_content_intro {
+.hero_consis .consist_inner .inner_menu_content .menu_content_intro {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -338,8 +360,6 @@ html {
 }
 .hero .container {
   background-color: linear-gradient(310deg, #F0145A 0%, #693264 100%);
-  border-left: 2px solid red;
-  border-right: 2px solid red;
 }
 .hero .container .hero_inner {
   display: block;
@@ -388,6 +408,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-items: left;
+  padding-bottom: 60px;
 }
 .hero .container .hero_inner .hero_inner_cards .card {
   display: flex;
@@ -395,24 +416,25 @@ html {
   flex: 1 1 30%;
   margin: 60px 60px 0 0;
 }
-.hero .container .hero_inner .hero_inner_cards .card:nth-child(3) {
-  margin-right: 0;
-}
-.hero .container .hero_inner .hero_inner_cards .card:nth-child(6) {
+.hero .container .hero_inner .hero_inner_cards .card:nth-child(3n+3) {
   margin-right: 0;
 }
 .hero .container .hero_inner .hero_inner_cards .card .card_img {
-  display: block;
+  display: flex;
   position: relative;
   width: 92px;
   height: 92px;
   border-radius: 24px;
-  background-color: var(--basic-white, #FFF);
+  padding: 14px;
+  background-color: #FFF;
 }
 .hero .container .hero_inner .hero_inner_cards .card .card_img .img_content {
-  position: absolute;
-  top: 14px;
-  left: 14px;
+  display: flex;
+  justify-content: center;
+}
+.hero .container .hero_inner .hero_inner_cards .card .card_description {
+  display: flex;
+  flex-flow: column;
 }
 .hero .container .hero_inner .hero_inner_cards .card .card_description .cards_title {
   font-family: Montserrat;
@@ -432,4 +454,578 @@ html {
   font-size: 16px;
   line-height: 162.5%;
   color: #FFF;
+}
+
+.shadow {
+  display: block;
+  position: relative;
+  width: 97.91%;
+  height: 10px;
+  background-color: #CACADB;
+  margin: 0 auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.shadow::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 97.91%;
+  height: 10px;
+  background-color: #E7E7F2;
+  margin: 0 auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin: 0 auto;
+}
+
+.team {
+  display: block;
+  background-color: #FFF;
+}
+.team .team_start_undershadow {
+  display: block;
+  height: 60px;
+  background-color: #FFF;
+}
+.team .team_inner {
+  background-color: inherit;
+  margin: 0 160px;
+}
+.team .team_inner .team_card {
+  display: flex;
+}
+.team .team_inner .team_card .portret {
+  width: 60%; /* Занимает ширину родительского элемента */
+  padding-top: 24%; /* Задает соотношение высоты к ширине */
+  background: url(../../../images/team/portret.svg) center/cover no-repeat;
+}
+.team .team_inner .team_card .team_content {
+  padding: 0 0 0 30px;
+  background-color: #EDEDF7;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.team .team_inner .team_card .team_content .team_link {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+  position: relative;
+  padding-top: 30px;
+}
+.team .team_inner .team_card .team_content .team_link::after {
+  padding-top: 30px;
+  content: url(../../images/hero-cards/Arrow_blue.svg);
+  position: absolute;
+  top: 1.5px;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.3s ease;
+}
+.team .team_inner .team_card .team_content .team_link:hover {
+  color: #F0145A;
+}
+.team .team_inner .team_card .team_content .team_link:hover::after {
+  content: url(../../images/hero-cards/Arrow_red.svg);
+}
+.team .team_inner .team_card .team_content .team_title {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 38px;
+  background: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.team .team_inner .team_card .team_content .team_subskribe {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #B3B3BA;
+  padding-bottom: 6px;
+}
+.team .team_inner .team_card .team_content .team_state {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157.143%;
+  color: #B3B3BA;
+}
+
+.blue_points {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 30px 0;
+}
+.blue_points .blue_points_drei {
+  display: flex;
+  padding-bottom: 60px;
+}
+.blue_points .blue_points_drei .points {
+  display: flex;
+  flex-direction: row;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #24A3FF;
+}
+.blue_points .blue_points_drei .points:nth-child(n+2) {
+  background-color: #b4dcf8;
+  margin-left: 15px;
+}
+
+.firms_inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #FFF;
+  padding: 0 100px 60px 100px;
+}
+.firms_inner .points_trust {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin: 0 auto;
+}
+.firms_inner .firms_table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 30px;
+  border-radius: 14px;
+  margin-top: 30px;
+  width: 100%;
+}
+.firms_inner .firms_table .hillel {
+  background-color: #1C4280;
+  padding: 36px 106.5px;
+}
+.firms_inner .firms_table .wannabiz {
+  height: 120px;
+  background-color: #143646;
+  padding: 46px 115px 46px 116px;
+  height: 122.25px;
+}
+.firms_inner .firms_table .tapgerine {
+  background-color: #F48B30;
+  padding: 38px 125px 38px 126px;
+}
+.firms_inner .firms_table .dlook {
+  background-color: #9E4DC3;
+  padding: 39px 125px;
+}
+.firms_inner .firms_table .arangear {
+  background-color: #FD9339;
+  padding: 38px 128px;
+}
+.firms_inner .firms_table .adtelligent {
+  background-color: #E2E2E4;
+  padding: 36px 102px;
+}
+.firms_inner .firms_table .clickky {
+  background-color: #C71C36;
+  padding: 29px 146px 30px 146px;
+}
+.firms_inner .firms_table .leasing {
+  background-color: #DCF3F9;
+  padding: 22px 142px;
+}
+.firms_inner .firms_table .infratec {
+  background-color: #EAEAEA;
+  padding: 30px 124px;
+}
+.firms_inner .firms_table .city-park {
+  background-color: #282240;
+  padding: 41px 124.5px;
+}
+.firms_inner .firms_table .artprint {
+  background-color: #1D4568;
+  padding: 37px 120px 37px 121px;
+}
+.firms_inner .firms_table .ultimate {
+  background-color: #000;
+  padding: 13px 139px 12px 139px;
+}
+
+.public {
+  background-color: #F5F5FA;
+}
+.public .container .public_inner {
+  background-color: #FFF;
+  padding: 30px 160px 0 160px;
+}
+.public .container .public_inner .public_link {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+.public .container .public_inner .public_link::after {
+  padding-top: 30px;
+  content: url(../../images/hero-cards/Arrow_blue.svg);
+  position: absolute;
+  top: 1.5px;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.3s ease;
+}
+.public .container .public_inner .public_link:hover {
+  color: #F0145A;
+}
+.public .container .public_inner .public_link:hover::after {
+  content: url(../../images/hero-cards/Arrow_red.svg);
+}
+.public .container .public_inner .public_title {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 38px;
+  background: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.public .container .public_inner .public_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.public .container .public_inner .public_cards .card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 513.33px;
+}
+.public .container .public_inner .public_cards .card:not(:last-child) {
+  margin-right: 30px;
+}
+.public .container .public_inner .public_cards .card .card-body {
+  padding: 30px;
+  background-color: #FFF;
+}
+.public .container .public_inner .public_cards .card .card-body .card-title {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 16px;
+  color: #24A3FF;
+}
+.public .container .public_inner .public_cards .card .card-body .card-title:hover {
+  color: #F0145A;
+}
+.public .container .public_inner .public_cards .card .card-body .card-data {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin: 15px 0;
+}
+.public .container .public_inner .public_cards .card .card-body .line {
+  width: 100%;
+  background-color: #E6E6F0;
+  height: 4px;
+  margin-bottom: 15px;
+}
+.public .container .public_inner .public_cards .card .card-body .card-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157.143%;
+  color: #000;
+}
+
+.footer {
+  background-color: #F5F5FA;
+}
+.footer .container .footer_inner {
+  padding: 30px 160px;
+  display: flex;
+}
+.footer .container .footer_inner .footer_adres {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 30px;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_onmap .adres {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.5%;
+  color: #323264;
+  margin-right: 10px;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_onmap .link {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #24A3FF;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel {
+  margin-top: 21px;
+  align-items: center;
+  display: flex;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .fb_blue {
+  margin-right: 10px;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .fb_blue:hover {
+  cursor: pointer;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .tel {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 10px;
+  color: #46466E;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .mail {
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #24A3FF;
+  margin-left: 10px;
+}
+.footer .container .footer_inner .footer_legal {
+  display: flex;
+  margin-left: auto;
+  padding-top: 30px;
+}
+.footer .container .footer_inner .footer_legal p {
+  color: #B3B3BA;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero_main .container .bgcwhite {
+  background-color: #FFF;
+}
+.hero_main .container .bgcwhite .hero_header .container_team {
+  background-color: #FFF;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .team_indicator {
+  color: #323264;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_contacts .contacts_lang .lang_active .lang_gray {
+  color: #B3B3BA;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_contacts .contacts_date .date_addres {
+  color: #B3B3BA;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_contacts .contacts_date .date_addres .point_gray {
+  background-color: #B3B3BA;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_contacts .contacts_date .date_addres .date_nrphone {
+  color: #B3B3BA;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_menu ul li .team_menu {
+  color: #24A3FF;
+}
+.hero_main .container .bgcwhite .hero_header .container_team .header_info .header_menu ul li .team_menu:hover {
+  color: #F0145A;
+}
+
+@media screen and (max-width: 1500px) {
+  .container_team .header_inner {
+    padding: 50px 100px 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container_team .header_inner {
+    padding: 50px 60px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container_team .header_inner {
+    padding: 50px 60px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container_team .header_inner {
+    padding: 10px 15px;
+  }
+}
+
+.section_team_main {
+  background-color: #FFF;
+}
+@media screen and (max-width: 1670px) {
+  .section_team_main .container .team_main_inner {
+    padding: 0 60px;
+  }
+}
+.section_team_main .container .team_main_inner .team_main_title {
+  display: flex;
+  margin: 0 auto;
+  text-align: left;
+  padding: 60px 280px;
+}
+@media screen and (max-width: 1600px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 260px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 180px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 180px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 60px 60px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section_team_main .container .team_main_inner .team_main_title {
+    padding: 30px 30px;
+  }
+}
+.section_team_main .container .team_main_inner .team_main_title .main_title_prima {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  font-size: 38px;
+  background: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 350px) {
+  .section_team_main .container .team_main_inner .team_main_title .main_title_prima {
+    font-size: 30px;
+  }
+}
+.section_team_main .container .team_main_inner .team_main_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 0 calc(33.33% - 60px);
+  max-width: 493px;
+}
+@media (max-width: 920px) {
+  .section_team_main .container .team_main_inner .team_main_cards .team_card {
+    flex: 1 0 calc(50% - 60px);
+  }
+}
+@media (max-width: 768px) {
+  .section_team_main .container .team_main_inner .team_main_cards .team_card {
+    flex: 1 0 calc(50% - 60px);
+  }
+}
+@media (max-width: 375px) {
+  .section_team_main .container .team_main_inner .team_main_cards .team_card {
+    flex: 1 0 100%;
+  }
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card picture {
+  max-width: 493px;
+  height: 400px;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card picture img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text {
+  display: flex;
+  justify-content: space-between; /* Распределение по краям */
+  align-items: center; /* Выравнивание по вертикали */
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info {
+  display: flex;
+  flex-direction: column;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info .team_card_name {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #323264;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info .statment {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  color: #B3B3BA;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_arrow {
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

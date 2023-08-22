@@ -1,0 +1,125 @@
+.section_team_main {
+  background-color: $basic_white;
+  .container {
+    .team_main_inner {
+      // padding: 0 100px;
+      @media screen and (max-width: 1670px) {
+        padding: 0 60px;
+      }
+        
+      .team_main_title {
+        display: flex;
+        margin: 0 auto;
+        text-align: left;
+        padding: 60px 280px;
+
+        @media screen and (max-width: 1600px) {
+          padding: 60px 260px;
+        }
+
+        @media screen and (max-width: 1440px) {
+          padding: 60px 180px;
+        }
+
+        @media screen and (max-width: 1350px) {
+          padding: 60px 180px;
+        }
+        @media screen and (max-width: 1024px) {
+          padding: 60px 180px;
+        }
+        @media screen and (max-width: 920px) {
+          padding: 60px 90px; 
+        }  
+        @media screen and (max-width: 768px) {
+          padding: 60px 60px; 
+        }
+        @media screen and (max-width: 350px) {
+          padding: 30px 30px; 
+        }
+    
+        .main_title_prima {
+          font-family: Montserrat;
+          font-weight: 700;
+          font-style: normal;
+          line-height: normal;
+          font-size: 38px;
+          background: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+         
+          @media screen and (max-width: 350px) {
+            font-size: 30px; 
+          }
+      
+          
+          
+          
+        }
+    
+      }
+      .team_main_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        .team_card {
+          display: flex;
+          flex-flow: column wrap;
+          flex: 1 0 calc(33.33% - 60px); 
+          max-width: 493px; 
+          @media (max-width: 920px) {
+            flex: 1 0 calc(50% - 60px); // На планшете 2 карточки в ряд
+          }
+            @media (max-width: 768px) {
+              flex: 1 0 calc(50% - 60px); // На планшете 2 карточки в ряд
+            }
+            
+            @media (max-width: 375px) {
+              flex: 1 0 100%; // На мобильных одна карточка в ряд
+            }
+          picture {
+            max-width: 493px; 
+            height: 400px; 
+            
+            img {
+              border-radius: 12px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; 
+            }
+          }
+          .card_text {
+            display: flex;
+            justify-content: space-between; /* Распределение по краям */
+            align-items: center; /* Выравнивание по вертикали */
+            .team_card_info {
+              display: flex;
+              flex-direction: column;
+
+              .team_card_name {
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color:#323264;
+              }
+              .statment {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px; /* 157.143% */
+                color: #B3B3BA;
+              }
+            }
+            .team_card_arrow {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

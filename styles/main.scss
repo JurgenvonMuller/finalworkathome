@@ -14,6 +14,7 @@
 @import "./components/buttons";
 @import "./components/_icons";
 @import "./components/arrow";
+@import "./components/footer_point_gray";
 
 // ------ hero_main----------
 
@@ -25,4 +26,13 @@
 @import "./sections/hero_main/cardshero";
 
 // -------bottom_white---------
-@import "./sections/bottom_white/bot_main"
+@import "./sections/bottom_white/bot_main";
+@import "./sections/bottom_white/bottom_gray";
+@import "./sections/bottom_white/firms_block";
+@import "./sections/bottom_white/bottom_cards";
+// -------- footer---------------
+@import "./sections/footer/footer";
+// -------TEAM_PAGE --------------
+@import "./sections/team_page/team_page_header";
+@import "./sections/team_page/team_page_main";
+@import "./sections/team_page/team_page_footer";

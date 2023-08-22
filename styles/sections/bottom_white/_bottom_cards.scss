@@ -1,0 +1,91 @@
+.public {
+background-color: $color_gray_bg;
+  .container {
+    .public_inner {
+      background-color: $basic_white;
+      padding: 30px 160px 0 160px;
+      .public_link {
+        @include h3_caps-regular;
+        color: $color_active_regular;
+        position: relative;
+        margin-bottom: 10px;
+        padding-top: 30px;
+        &::after {
+          // -----------
+          padding-top: 30px;
+
+          // синяя картинка должна быть         тут
+          content: url(../../images/hero-cards/Arrow_blue.svg);
+          position: absolute;
+          top: 1.5px;
+          width: 12px;
+          height: 12px;
+          transition: opacity 0.3s ease;
+        }
+      }
+      .public_link:hover {
+        // --замена цвета сервисес ---------------------------------
+        color: $color_accent;
+      }
+      // -------замена картинки стрелки на красную-------------
+      .public_link:hover::after {
+        content: url(../../images/hero-cards/Arrow_red.svg);
+      }
+      .public_title {
+        @include hero-red-regular;
+        background: linear-gradient(118deg, #F0145A 0%, #EF8080 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: left;
+        padding-bottom: 30px;
+      }
+      .public_cards {
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 513.33px;
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+          // .card_img_top {
+          // }
+          .card-body {
+            padding: 30px;
+            background-color: $basic_white;
+
+            .card-title {
+              @include h4_regular;
+              font-size: 16px;
+              color: $color_active_regular;
+              &:hover {
+                color: $color_accent;
+              }
+            }
+            .card-data {
+              @include header_lang_uaruen;
+              text-transform: uppercase;
+              color: #B3B3BA;
+              margin: 15px 0;
+            }
+            .line {
+              width: 100%;
+              background-color: #E6E6F0;
+              height: 4px;
+              margin-bottom: 15px;
+            }
+            .card-text {
+                
+              @include text_style_400;
+              font-size: 14px;
+              line-height: 157.143%;
+              color: $paragraf_ul_ol_list;
+            }
+          }
+        }
+      }
+    }
+  }
+}

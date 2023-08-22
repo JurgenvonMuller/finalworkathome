@@ -2,8 +2,8 @@
   background-color: transparent;
   .container {
     background-color: $gradient_red;
-    border-left: 2px solid  red;
-    border-right: 2px solid  red;
+    // border-left: 2px solid  red;
+    // border-right: 2px solid  red;
     .hero_inner {
       display: block;
       padding: 0 160px 0 160px;
@@ -45,33 +45,34 @@
       display: flex;
       flex-wrap: wrap;
       justify-items: left;
+      padding-bottom: 60px;
         .card {
           display: flex;
           flex-wrap: wrap;
           flex: 1 1 30%;
           
           margin: 60px 60px 0 0;
-          &:nth-child(3) {
-            margin-right: 0;
-          }
-          &:nth-child(6) {
+          &:nth-child(3n+3) {
             margin-right: 0;
           }
           .card_img {
-            display: block;
+            display: flex;
             position:relative;
             width: 92px;
             height: 92px;
             border-radius: 24px ;
-            background-color: var(--basic-white, #FFF);
+            padding:14px;
+            background-color: $basic_white;
             .img_content {
-              position: absolute;
-              top:14px;
-              left:14px;
+              display:flex;
+              justify-content: center;
             }
           }
           .card_description{
-         
+            display: flex;
+            flex-flow: column;
+          
+            
             .cards_title {
               @include h3_caps-regular;
               color: $color_active_regular;
@@ -87,4 +88,5 @@
     }
   }
 }
+
   

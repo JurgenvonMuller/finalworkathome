@@ -3,10 +3,33 @@
   position: relative;
   top: -122px;
   justify-content: center;
+  //  .svg-container-scroll{
+  //   position:absolute;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   // transform: translateY(10%)
+  
+
+  //   .svg-scroll {
+
+  //   }
+  //  }
   .svg-container {
+    position: relative;
     .svg-content {
       width: 100%; 
       height: 100%;
+    }
+    .svg-scroll {
+      
+      position: relative;
+      left: 50%;
+      top: -72px;
+      &:hover {
+        cursor: pointer;
+        
+        content:"url(../../../images/header/Scroll-active.svg)"
+      }
     }
   }
   .hero_h_title {
