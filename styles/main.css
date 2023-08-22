@@ -171,20 +171,59 @@ html {
   display: flex;
   padding: 50px 160px 0 160px;
 }
+@media screen and (max-width: 1680px) {
+  .hero_header .header_inner {
+    padding: 50px 110px 0 110px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .hero_header .header_inner {
+    padding: 50px 60px 0 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero_header .header_inner {
+    padding: 50px 60px 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_header .header_inner {
+    display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero_header .header_inner {
+    padding: 10px 15px 10px 15px;
+  }
+}
 .hero_header .header_inner .header_logo {
   display: block;
+  position: relative;
   max-width: 130px;
+}
+@media screen and (max-width: 768px) {
+  .hero_header .header_inner .header_logo {
+    position: absolute;
+    top: 80px;
+  }
 }
 .hero_header .header_inner .header_logo .logo_name {
   margin-bottom: 6.5px;
 }
 .hero_header .header_inner .header_info {
   display: block;
+  position: relative;
   margin-left: auto;
 }
 .hero_header .header_inner .header_info .header_contacts {
   display: inline-flex;
   color: #FFF;
+}
+@media screen and (max-width: 530px) {
+  .hero_header .header_inner .header_info .header_contacts {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_lang {
   display: flex;
@@ -219,6 +258,12 @@ html {
 .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 530px) {
+  .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .kyiv {
+    display: none;
+  }
 }
 .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .point {
   width: 6px;
@@ -227,12 +272,35 @@ html {
   background-color: #FFF;
   margin: 0 6px;
 }
+@media screen and (max-width: 530px) {
+  .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .point {
+    display: none;
+  }
+}
 .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .date_nrphone {
   font-family: Montserrat;
   font-style: normal;
   line-height: normal;
   font-weight: 700;
   color: #FFF;
+  white-space: nowrap;
+}
+@media screen and (max-width: 605px) {
+  .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .fbwhite {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_header .header_inner .header_info .header_menu {
+    display: block;
+    position: absolute;
+    top: 110px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .hero_header .header_inner .header_info .header_menu {
+    display: none;
+  }
 }
 .hero_header .header_inner .header_info .header_menu ul {
   display: flex;
@@ -244,6 +312,7 @@ html {
 .hero_header .header_inner .header_info .header_menu ul li a {
   color: #FFF;
   text-decoration: none;
+  white-space: nowrap;
 }
 .hero_header .header_inner .header_info .header_menu ul li a:hover {
   color: #F0145A;
