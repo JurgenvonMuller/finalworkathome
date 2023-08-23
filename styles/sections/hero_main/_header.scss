@@ -3,8 +3,6 @@
   position: relative;
   background-color: transparent;
   z-index: 5;
-  
-  
   .header_inner {
     display: flex;
     padding: 50px 160px 0 160px;
@@ -124,13 +122,13 @@
         }
 
 
-      ul {
+        ul {
         display: flex;
         justify-content: flex-end;
         li {
-        &:not(:last-child) {
-          margin-right: 15px;
-        }
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
           a {
             color: $basic_white;
             text-decoration: none;
@@ -142,7 +140,7 @@
             }
           }
         } 
-      }
+        }
       
       }
     }

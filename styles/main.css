@@ -336,12 +336,16 @@ html {
 }
 .hero_h .svg-container .svg-scroll {
   position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  cursor: pointer;
   left: 50%;
   top: -72px;
 }
-.hero_h .svg-container .svg-scroll:hover {
-  cursor: pointer;
-  content: "url(../../../images/header/Scroll-active.svg)";
+.hero_h .svg-container .svg-scroll:hover img {
+  content: url("../../../images/header/Scroll-active.svg");
 }
 .hero_h .hero_h_title {
   display: flex;

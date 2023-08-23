@@ -21,14 +21,16 @@
       height: 100%;
     }
     .svg-scroll {
-      
       position: relative;
+      display: inline-block;
+      background-color: transparent;
+      color: transparent;
+      border:none;
+      cursor: pointer;
       left: 50%;
       top: -72px;
-      &:hover {
-        cursor: pointer;
-        
-        content:"url(../../../images/header/Scroll-active.svg)"
+      &:hover img {
+        content: url("../../../images/header/Scroll-active.svg"); 
       }
     }
   }
