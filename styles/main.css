@@ -525,6 +525,93 @@ html {
   color: #FFF;
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  header {
+    display: flex;
+  }
+}
+
+/* Гамбургер иконка */
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 10px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: transparent;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu.active {
+  transform: translateX(45%);
+}
+
+.menu ul li {
+  list-style-type: none;
+  margin-bottom: 26px;
+}
+.menu ul li a {
+  color: #FFF;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.menu ul li a:hover {
+  color: #F0145A;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
 .shadow {
   display: block;
   position: relative;
