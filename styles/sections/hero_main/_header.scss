@@ -85,7 +85,7 @@
           align-items: center;
           white-space: nowrap;
           .kyiv {
-            @media screen and (max-width:530px) {
+            @media screen and (max-width:538px) {
               display: none;
             }
           }
@@ -95,7 +95,7 @@
             border-radius: 6px;
             background-color: $basic_white;
             margin: 0 6px;
-            @media screen and (max-width:530px) {
+            @media screen and (max-width:538px) {
               display: none;
             }
           }

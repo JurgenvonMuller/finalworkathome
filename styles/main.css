@@ -70,6 +70,7 @@ table {
 
 html {
   font-family: Montserrat;
+  background-color: #eaeaea;
 }
 
 @font-face {
@@ -260,7 +261,7 @@ html {
   align-items: center;
   white-space: nowrap;
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 538px) {
   .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .kyiv {
     display: none;
   }
@@ -272,7 +273,7 @@ html {
   background-color: #FFF;
   margin: 0 6px;
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 538px) {
   .hero_header .header_inner .header_info .header_contacts .contacts_date .date_addres .point {
     display: none;
   }
