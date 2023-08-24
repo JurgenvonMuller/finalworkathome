@@ -7,13 +7,10 @@
 // -----------------------------переменные и миксины --------------
 @import "./abstract/variables";
 @import "./abstract/mixins";
-// @import "./abstract/media-query";
+
 
 // -----------------------подключение мелких компонентов сайта--------------- 
 
-@import "./components/buttons";
-@import "./components/_icons";
-@import "./components/arrow";
 @import "./components/footer_point_gray";
 
 // ------ hero_main----------

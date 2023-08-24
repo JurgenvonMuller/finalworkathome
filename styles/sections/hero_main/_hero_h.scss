@@ -1,7 +1,6 @@
 .hero_h {
   display: flex;
   position: relative;
-  top: -122px;
   justify-content: center;
   //  .svg-container-scroll{
   //   position:absolute;
@@ -21,14 +20,15 @@
       height: 100%;
     }
     .svg-scroll {
-      position: relative;
+      position: absolute;
       display: inline-block;
       background-color: transparent;
       color: transparent;
-      border:none;
+      border: none;
       cursor: pointer;
       left: 50%;
-      top: -72px;
+      top: 90%;
+
       &:hover img {
         content: url("../../../images/header/Scroll-active.svg"); 
       }

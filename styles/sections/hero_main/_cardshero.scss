@@ -2,8 +2,6 @@
   background-color: transparent;
   .container {
     background-color: $gradient_red;
-    // border-left: 2px solid  red;
-    // border-right: 2px solid  red;
     .hero_inner {
       display: block;
       padding: 0 160px 0 160px;
@@ -24,7 +22,7 @@
           position: relative;
           margin-bottom: 10px;
           &::after {
-            // синяя картинка должна быть         тут
+            // синяя картинка стрелка должна быть         тут
             content: url(../../images/hero-cards/Arrow_blue.svg);
             position: absolute;
             top: 1.5px;
@@ -36,6 +34,7 @@
           .inner_servises:hover  {
             // --замена цвета сервисес ---------------------------------
             color: $color_accent;
+            cursor: pointer;
           }
           // -------замена картинки стрелки на красную-------------
           .inner_servises:hover::after {
@@ -44,7 +43,8 @@
       .hero_inner_cards {
       display: flex;
       flex-wrap: wrap;
-      justify-items: left;
+      justify-items: flex-start;
+      align-items: flex-start;
       padding-bottom: 60px;
         .card {
           display: flex;
