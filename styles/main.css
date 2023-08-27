@@ -267,6 +267,54 @@ html {
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 1550px) {
+  .hero_h .svg-container .svg-content {
+    width: 92%;
+    height: 92%;
+    position: relative;
+    left: 80px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .hero_h .svg-container .svg-content {
+    width: 82%;
+    height: 82%;
+    position: relative;
+    left: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero_h .svg-container .svg-content {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 90px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .hero_h .svg-container .svg-content {
+    width: 118%;
+    height: 118%;
+    position: relative;
+    right: 60px;
+  }
+}
+@media (min-width: 375px) and (max-width: 765px) {
+  .hero_h .svg-container .svg-content {
+    width: 114%;
+    height: 114%;
+    position: relative;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero_h .svg-container .svg-content {
+    width: 110%;
+    height: 110%;
+    position: relative;
+    left: 30px;
+  }
+}
 .hero_h .svg-container .svg-scroll {
   position: absolute;
   display: inline-block;
@@ -280,6 +328,30 @@ html {
 .hero_h .svg-container .svg-scroll:hover img {
   content: url("../../../images/header/Scroll-active.svg");
 }
+@media screen and (max-width: 1440px) {
+  .hero_h .svg-container .svg-scroll {
+    left: 40%;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero_h .svg-container .svg-scroll {
+    left: 50%;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 765px) {
+  .hero_h .svg-container .svg-scroll {
+    left: 50%;
+    top: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero_h .svg-container .svg-scroll {
+    left: 50%;
+    top: 90%;
+  }
+}
 .hero_h .hero_h_title {
   display: flex;
   position: relative;
@@ -292,21 +364,90 @@ html {
   font-size: 38px;
   color: #FFF;
 }
+@media screen and (max-width: 765px) {
+  .hero_h .hero_h_title {
+    margin: 100px 97px 0 97px;
+    text-align: center;
+  }
+}
 
 .hero_consis .consist_inner {
   display: flex;
-  max-width: 1380px;
   margin: 0px auto 60px;
+  padding: 0 280px;
+}
+@media screen and (max-width: 1680px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 60px;
+    padding: 0 180px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 60px;
+    padding: 0 180px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 60px;
+    padding: 0 110px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 60px;
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 0px;
+    padding: 0px 60px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_consis .consist_inner {
+    margin: 0px auto 0px;
+    padding: 0px 60px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero_consis .consist_inner {
+    padding: 30px;
+  }
 }
 .hero_consis .consist_inner .consist_inner_menu {
   padding-right: 60px;
-  flex: 1 1 17%;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+  flex: 1 1 468px;
+}
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner .consist_inner_menu {
+    flex: 0 0 auto;
+  }
 }
 .hero_consis .consist_inner .consist_inner_menu ul {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-end;
+}
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner .consist_inner_menu ul {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero_consis .consist_inner .consist_inner_menu ul {
+    padding: 30px 0;
+  }
 }
 .hero_consis .consist_inner .consist_inner_menu ul li {
   font-family: Montserrat;
@@ -337,12 +478,17 @@ html {
   -webkit-background-clip: text;
           background-clip: text;
 }
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner .consist_inner_menu ul li {
+    margin-right: 30px;
+  }
+}
 .hero_consis .consist_inner .inner_menu_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 60px;
-  flex: 1 1 54%;
+  flex: 1 1 753px;
 }
 .hero_consis .consist_inner .inner_menu_content .menu_content_title {
   font-family: Montserrat;
@@ -361,7 +507,33 @@ html {
   font-size: 19px;
   line-height: 157.89%;
 }
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner .inner_menu_content .menu_content_intro {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .hero_consis .consist_inner .inner_menu_content {
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero_consis .consist_inner .inner_menu_content {
+    padding: 0px;
+    margin-top: 30px;
+  }
+}
 
+@media screen and (max-width: 673px) {
+  .consist_inner .consist_inner_menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
 .hero {
   background-color: transparent;
 }
@@ -372,6 +544,26 @@ html {
   display: block;
   padding: 0 160px 0 160px;
   background-color: transparent;
+}
+@media screen and (max-width: 1760px) {
+  .hero .container .hero_inner {
+    padding: 0 130px 0 130px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .hero .container .hero_inner {
+    padding: 0 100px 0 100px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .hero .container .hero_inner {
+    padding: 0 60px 0 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero .container .hero_inner {
+    padding: 0 30px 0 30px;
+  }
 }
 .hero .container .hero_inner .inner_cards_title {
   font-family: Montserrat;
@@ -384,6 +576,11 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: left;
+}
+@media screen and (max-width: 1020px) {
+  .hero .container .hero_inner .inner_cards_title {
+    font-size: 30px;
+  }
 }
 .hero .container .hero_inner .inner_servises {
   font-family: Montserrat;
@@ -427,6 +624,37 @@ html {
 }
 .hero .container .hero_inner .hero_inner_cards .card:nth-child(3n+3) {
   margin-right: 0;
+}
+@media screen and (max-width: 1321px) {
+  .hero .container .hero_inner .hero_inner_cards .card {
+    flex: 1 1 25%;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .hero .container .hero_inner .hero_inner_cards .card {
+    flex: 1 1 30%;
+    margin-top: 60px;
+  }
+  .hero .container .hero_inner .hero_inner_cards .card:nth-child(odd) {
+    margin-right: 60px;
+  }
+  .hero .container .hero_inner .hero_inner_cards .card:nth-child(even) {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .hero .container .hero_inner .hero_inner_cards .card {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero .container .hero_inner .hero_inner_cards .card {
+    flex: 1 1 auto;
+    margin-top: 60px;
+  }
+  .hero .container .hero_inner .hero_inner_cards .card:nth-child(odd) {
+    margin-right: 0px;
+  }
 }
 .hero .container .hero_inner .hero_inner_cards .card .card_img {
   display: flex;
@@ -587,21 +815,77 @@ header {
 }
 .team .team_inner {
   background-color: inherit;
-  margin: 0 160px;
+  padding: 0 160px 0 160px;
+}
+@media screen and (max-width: 1760px) {
+  .team .team_inner {
+    padding: 0 130px 0 130px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .team .team_inner {
+    padding: 0 100px 0 100px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .team .team_inner {
+    padding: 0 60px 0 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .team .team_inner {
+    padding: 0 30px 0 30px;
+  }
 }
 .team .team_inner .team_card {
   display: flex;
 }
-.team .team_inner .team_card .portret {
-  width: 60%; /* Занимает ширину родительского элемента */
-  padding-top: 24%; /* Задает соотношение высоты к ширине */
-  background: url(../../../images/team/portret.svg) center/cover no-repeat;
+@media screen and (max-width: 1022px) {
+  .team .team_inner .team_card {
+    flex-direction: column;
+  }
+}
+.team .team_inner .team_card .team_card_img_one {
+  display: flex;
+  background-image: url("../../../images/team/portret1920.svg");
+  width: 400px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  flex: 1 0 400px;
+}
+@media screen and (max-width: 1110px) {
+  .team .team_inner .team_card .team_card_img_one {
+    background-image: url("../../../images/team/portret1024.svg");
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .team .team_inner .team_card .team_card_img_one {
+    background-image: url("../../../images/team/portret768.svg");
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    flex: 1 0 500px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .team .team_inner .team_card .team_card_img_one {
+    background-image: url("../../../images/team/portret375.svg");
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    flex: 1 0 500px;
+  }
 }
 .team .team_inner .team_card .team_content {
-  padding: 0 0 0 30px;
+  padding: 30px;
   background-color: #EDEDF7;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  flex: 1 1 auto;
 }
 .team .team_inner .team_card .team_content .team_link {
   font-family: Montserrat;
@@ -613,10 +897,8 @@ header {
   text-transform: uppercase;
   color: #24A3FF;
   position: relative;
-  padding-top: 30px;
 }
 .team .team_inner .team_card .team_content .team_link::after {
-  padding-top: 30px;
   content: url(../../images/hero-cards/Arrow_blue.svg);
   position: absolute;
   top: 1.5px;
@@ -626,6 +908,7 @@ header {
 }
 .team .team_inner .team_card .team_content .team_link:hover {
   color: #F0145A;
+  cursor: pointer;
 }
 .team .team_inner .team_card .team_content .team_link:hover::after {
   content: url(../../images/hero-cards/Arrow_red.svg);
@@ -692,6 +975,16 @@ header {
   background-color: #FFF;
   padding: 0 100px 60px 100px;
 }
+@media screen and (max-width: 1680px) {
+  .firms_inner {
+    padding: 0 50px 60px 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .firms_inner {
+    padding: 0px 0px 60px 0px;
+  }
+}
 .firms_inner .points_trust {
   font-family: Montserrat;
   font-style: normal;
@@ -701,67 +994,84 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #323264;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 .firms_inner .firms_table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: hidden;
   margin-top: 30px;
   border-radius: 14px;
   margin-top: 30px;
+  max-width: 1720px;
   width: 100%;
+  margin: 0 auto;
+}
+.firms_inner .firms_table .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  flex: 1 1 350px;
+}
+@media screen and (max-width: 1520px) {
+  .firms_inner .firms_table .box {
+    flex: 1 1 310px;
+  }
+}
+@media screen and (max-width: 1244px) {
+  .firms_inner .firms_table .box {
+    flex: 1 1 280px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .firms_inner .firms_table .box {
+    flex: 1 1 250px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .firms_inner .firms_table .box {
+    flex: 1 1 380px;
+  }
+  .firms_inner .firms_table .box:nth-child(1n+7) {
+    display: none;
+  }
 }
 .firms_inner .firms_table .hillel {
   background-color: #1C4280;
-  padding: 36px 106.5px;
 }
 .firms_inner .firms_table .wannabiz {
-  height: 120px;
   background-color: #143646;
-  padding: 46px 115px 46px 116px;
-  height: 122.25px;
 }
 .firms_inner .firms_table .tapgerine {
   background-color: #F48B30;
-  padding: 38px 125px 38px 126px;
 }
 .firms_inner .firms_table .dlook {
   background-color: #9E4DC3;
-  padding: 39px 125px;
 }
 .firms_inner .firms_table .arangear {
   background-color: #FD9339;
-  padding: 38px 128px;
 }
 .firms_inner .firms_table .adtelligent {
   background-color: #E2E2E4;
-  padding: 36px 102px;
 }
 .firms_inner .firms_table .clickky {
   background-color: #C71C36;
-  padding: 29px 146px 30px 146px;
 }
 .firms_inner .firms_table .leasing {
   background-color: #DCF3F9;
-  padding: 22px 142px;
 }
 .firms_inner .firms_table .infratec {
   background-color: #EAEAEA;
-  padding: 30px 124px;
 }
 .firms_inner .firms_table .city-park {
   background-color: #282240;
-  padding: 41px 124.5px;
 }
 .firms_inner .firms_table .artprint {
   background-color: #1D4568;
-  padding: 37px 120px 37px 121px;
 }
 .firms_inner .firms_table .ultimate {
   background-color: #000;
-  padding: 13px 139px 12px 139px;
 }
 
 .public {
@@ -770,6 +1080,21 @@ header {
 .public .container .public_inner {
   background-color: #FFF;
   padding: 30px 160px 0 160px;
+}
+@media screen and (max-width: 1680px) {
+  .public .container .public_inner {
+    padding: 30px 110px 0 110px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .public .container .public_inner {
+    padding: 30px 60px 0 60px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .public .container .public_inner {
+    padding: 30px 30px 0 30px;
+  }
 }
 .public .container .public_inner .public_link {
   font-family: Montserrat;
@@ -815,14 +1140,33 @@ header {
 .public .container .public_inner .public_cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .public .container .public_inner .public_cards .card {
   display: flex;
   flex-wrap: wrap;
-  max-width: 513.33px;
+  max-width: 648px;
+  flex: 1 1 250px;
 }
 .public .container .public_inner .public_cards .card:not(:last-child) {
   margin-right: 30px;
+}
+.public .container .public_inner .public_cards .card .card_img {
+  display: flex;
+  height: 200px;
+  flex: 1 1 300px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.public .container .public_inner .public_cards .card .card-img-top1 {
+  background-image: url("../../../images/bottom_cards/top1.svg");
+}
+.public .container .public_inner .public_cards .card .card-img-top2 {
+  background-image: url("../../../images/bottom_cards/top2.svg");
+}
+.public .container .public_inner .public_cards .card .card-img-top3 {
+  background-image: url("../../../images/bottom_cards/top2.svg");
 }
 .public .container .public_inner .public_cards .card .card-body {
   padding: 30px;

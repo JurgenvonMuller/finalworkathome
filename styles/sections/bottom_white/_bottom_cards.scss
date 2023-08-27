@@ -4,6 +4,15 @@ background-color: $color_gray_bg;
     .public_inner {
       background-color: $basic_white;
       padding: 30px 160px 0 160px;
+      @media screen and (max-width: 1680px) {
+        padding: 30px 110px 0 110px;
+      }
+      @media screen and (max-width: 1440px) {
+        padding: 30px 60px 0 60px;
+      }
+      @media screen and (max-width: 380px) {
+        padding: 30px 30px 0 30px;
+      }
       .public_link {
         @include h3_caps-regular;
         color: $color_active_regular;
@@ -43,15 +52,40 @@ background-color: $color_gray_bg;
       .public_cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        // max-width: 1600px;
+        // margin:0 auto;
+
+
         .card {
           display: flex;
           flex-wrap: wrap;
-          max-width: 513.33px;
+          max-width: 648px;
+          // min-width: 290px;
+          flex: 1 1 250px;        
           &:not(:last-child) {
             margin-right: 30px;
           }
-          // .card_img_top {
-          // }
+          .card_img {
+
+            display: flex;
+            height: 200px;
+            flex: 1 1 300px;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+          }
+          .card-img-top1 {
+            background-image: url("../../../images/bottom_cards/top1.svg");
+          }
+          .card-img-top2 {
+            background-image: url("../../../images/bottom_cards/top2.svg");
+          }
+          .card-img-top3 {
+            background-image: url("../../../images/bottom_cards/top2.svg");
+          }
+
+          
           .card-body {
             padding: 30px;
             background-color: $basic_white;

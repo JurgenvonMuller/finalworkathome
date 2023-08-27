@@ -6,6 +6,20 @@
       display: block;
       padding: 0 160px 0 160px;
       background-color: transparent;
+
+      @media screen and (max-width: 1760px) {
+        padding: 0 130px 0 130px;
+      }
+      @media screen and (max-width: 1600px) {
+        padding: 0 100px 0 100px;
+      }
+      @media screen and (max-width: 1440px) {
+        padding: 0 60px 0 60px;
+      }
+      
+      @media screen and (max-width: 375px) {
+        padding: 0 30px 0 30px;
+      }
       
         .inner_cards_title {
           @include hero-red-regular;
@@ -14,6 +28,10 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           text-align: left;
+          @media screen and (max-width: 1020px) {
+            font-size: 30px;
+          // @include h2-regular;
+          }
         }
         .inner_servises {
           // синий цвет должен быть тут и после ховер - красный актив
@@ -50,10 +68,33 @@
           display: flex;
           flex-wrap: wrap;
           flex: 1 1 30%;
-          
           margin: 60px 60px 0 0;
           &:nth-child(3n+3) {
             margin-right: 0;
+          }
+      
+          @media screen and (max-width: 1321px) {
+            flex: 1 1 25%;
+          }
+          @media screen and (max-width: 1022px) {
+            flex: 1 1 30%;
+            margin-top: 60px;
+            &:nth-child(odd) {
+              margin-right: 60px;
+            }
+            &:nth-child(even) {
+              margin-right: 0px;
+            }
+          }
+          @media screen and (max-width: 670px) {
+            margin-top: 60px;
+          }
+          @media screen and (max-width: 550px) {
+            flex: 1 1 auto;
+            margin-top: 60px;
+            &:nth-child(odd) {
+              margin-right: 0px;
+            }
           }
           .card_img {
             display: flex;
@@ -77,6 +118,7 @@
               @include h3_caps-regular;
               color: $color_active_regular;
               margin: 30px 0 15px 0;
+              
             }
             .cards_text {
               @include paragraf;
