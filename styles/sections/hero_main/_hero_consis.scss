@@ -23,6 +23,8 @@
       @media screen and (max-width: 1024px) {
         margin: 0px auto 60px;
         padding: 0 60px;
+        
+        
       }
       
       @media screen and (max-width: 1020px) {
@@ -45,6 +47,9 @@
         flex: 1 1 468px;
         @media screen and (max-width: 1020px) {
           flex: 0 0 auto;
+          border-right: none;
+          
+          
         }
 
         ul  {
@@ -85,7 +90,7 @@
               -webkit-text-fill-color: transparent;
               &:hover {
                 background: $color_accent;
-              background-clip: text;
+                background-clip: text;
               }
             }
             @media screen and (max-width: 1020px) {
@@ -130,6 +135,17 @@
     }
   
 }
+@media screen and (max-width: 1020px)
+{.consist_inner .consist_inner_menu {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  margin-right: 30px;
+  border: none;
+  flex: 0 0 auto;
+}
+}
+
 @media screen and (max-width: 673px)
 {.consist_inner .consist_inner_menu {
   overflow-x: auto;

@@ -427,6 +427,7 @@ html {
 @media screen and (max-width: 1020px) {
   .hero_consis .consist_inner .consist_inner_menu {
     flex: 0 0 auto;
+    border-right: none;
   }
 }
 .hero_consis .consist_inner .consist_inner_menu ul {
@@ -527,6 +528,16 @@ html {
   }
 }
 
+@media screen and (max-width: 1020px) {
+  .consist_inner .consist_inner_menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    margin-right: 30px;
+    border: none;
+    flex: 0 0 auto;
+  }
+}
 @media screen and (max-width: 673px) {
   .consist_inner .consist_inner_menu {
     overflow-x: auto;
@@ -1083,7 +1094,7 @@ header {
 }
 @media screen and (max-width: 1680px) {
   .public .container .public_inner {
-    padding: 30px 110px 0 110px;
+    padding: 30px 90px 0 90px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1142,6 +1153,11 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 920px) {
+  .public .container .public_inner .public_cards {
+    justify-content: center;
+  }
+}
 .public .container .public_inner .public_cards .card {
   display: flex;
   flex-wrap: wrap;
@@ -1150,6 +1166,11 @@ header {
 }
 .public .container .public_inner .public_cards .card:not(:last-child) {
   margin-right: 30px;
+}
+@media screen and (max-width: 900px) {
+  .public .container .public_inner .public_cards .card:not(:last-child):not(:first-child) {
+    margin-right: 0px;
+  }
 }
 .public .container .public_inner .public_cards .card .card_img {
   display: flex;
@@ -1160,13 +1181,13 @@ header {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 .public .container .public_inner .public_cards .card .card-img-top1 {
-  background-image: url("../../../images/bottom_cards/top1.svg");
+  background-image: url("../../../images/bottom_cards/1_bottom_cards.png");
 }
 .public .container .public_inner .public_cards .card .card-img-top2 {
-  background-image: url("../../../images/bottom_cards/top2.svg");
+  background-image: url("../../../images/bottom_cards/2Cover.png");
 }
 .public .container .public_inner .public_cards .card .card-img-top3 {
-  background-image: url("../../../images/bottom_cards/top2.svg");
+  background-image: url("../../../images/bottom_cards/3Cover.png");
 }
 .public .container .public_inner .public_cards .card .card-body {
   padding: 30px;
@@ -1216,11 +1237,30 @@ header {
 .footer .container .footer_inner {
   padding: 30px 160px;
   display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+}
+@media screen and (max-width: 1680px) {
+  .footer .container .footer_inner {
+    padding: 30px 90px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .footer .container .footer_inner {
+    padding: 30px 60px;
+  }
 }
 .footer .container .footer_inner .footer_adres {
   display: flex;
-  flex-flow: column wrap;
-  margin-top: 30px;
+  width: 100%;
+  padding-top: 30px;
+  border-top: 2px solid #e92f17;
+  flex-flow: row wrap;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_onmap {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
 }
 .footer .container .footer_inner .footer_adres .footer_adres_onmap .adres {
   font-family: Montserrat;
@@ -1243,9 +1283,14 @@ header {
   text-transform: uppercase;
 }
 .footer .container .footer_inner .footer_adres .footer_adres_fbtel {
-  margin-top: 21px;
+  margin-top: 0px;
   align-items: center;
   display: flex;
+}
+@media screen and (max-width: 700px) {
+  .footer .container .footer_inner .footer_adres .footer_adres_fbtel {
+    order: 1;
+  }
 }
 .footer .container .footer_inner .footer_adres .footer_adres_fbtel .fb_blue {
   margin-right: 10px;
@@ -1271,18 +1316,41 @@ header {
   color: #24A3FF;
   margin-left: 10px;
 }
-.footer .container .footer_inner .footer_legal {
+.footer .container .footer_inner .footer_adres .footer_legal {
   display: flex;
   margin-left: auto;
-  padding-top: 30px;
+  margin-right: 0px;
 }
-.footer .container .footer_inner .footer_legal p {
+@media screen and (max-width: 1410px) {
+  .footer .container .footer_inner .footer_adres .footer_legal {
+    flex: 1 5 auto;
+  }
+}
+.footer .container .footer_inner .footer_adres .footer_legal p {
+  white-space: nowrap;
   color: #B3B3BA;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-right: 0px;
+  margin-left: auto;
+}
+@media screen and (max-width: 950px) {
+  .footer .container .footer_inner .footer_adres .footer_legal p {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+}
+
+.footer_box {
+  flex: 1 1 950px;
+}
+@media screen and (max-width: 760px) {
+  .footer_box {
+    flex: 1 1 auto;
+  }
 }
 
 .hero_main .container .bgcwhite {

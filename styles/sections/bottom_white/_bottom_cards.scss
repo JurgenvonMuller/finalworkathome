@@ -5,7 +5,7 @@ background-color: $color_gray_bg;
       background-color: $basic_white;
       padding: 30px 160px 0 160px;
       @media screen and (max-width: 1680px) {
-        padding: 30px 110px 0 110px;
+        padding: 30px 90px 0 90px;
       }
       @media screen and (max-width: 1440px) {
         padding: 30px 60px 0 60px;
@@ -55,7 +55,9 @@ background-color: $color_gray_bg;
         justify-content: space-between;
         // max-width: 1600px;
         // margin:0 auto;
-
+        @media screen and (max-width: 920px) {
+          justify-content: center;
+         }
 
         .card {
           display: flex;
@@ -65,7 +67,15 @@ background-color: $color_gray_bg;
           flex: 1 1 250px;        
           &:not(:last-child) {
             margin-right: 30px;
+          
+            @media screen and (max-width: 900px) {
+              &:not(:first-child) {
+                margin-right: 0px;
+              }
+            }
           }
+
+         
           .card_img {
 
             display: flex;
@@ -76,13 +86,13 @@ background-color: $color_gray_bg;
             background-size: cover; /* Resize the background image to cover the entire container */
           }
           .card-img-top1 {
-            background-image: url("../../../images/bottom_cards/top1.svg");
+            background-image: url("../../../images/bottom_cards/1_bottom_cards.png");
           }
           .card-img-top2 {
-            background-image: url("../../../images/bottom_cards/top2.svg");
+            background-image: url("../../../images/bottom_cards/2Cover.png");
           }
           .card-img-top3 {
-            background-image: url("../../../images/bottom_cards/top2.svg");
+            background-image: url("../../../images/bottom_cards/3Cover.png");
           }
 
           
