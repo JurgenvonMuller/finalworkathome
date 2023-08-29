@@ -7,7 +7,7 @@
 .shadow {
   display: block;
   position: relative;
-  width: 97.91%;
+  width: 99%;
   height: 10px;
   background-color: #CACADB;
   margin: 0 auto;
@@ -18,7 +18,7 @@
   display: block;
   position: relative;
   top:10px;
-  width: 97.91%;
+  width: 99%;
   height: 10px;
   background-color: #E7E7F2;;
   margin: 0 auto;
@@ -65,17 +65,10 @@
         width: 400px;
         border-top-left-radius: 12px;
         border-bottom-left-radius: 12px;
-        // object-fit: cover;
-        // width: 60%; /* Занимает ширину родительского элемента */
-        // padding-top: 24%; /* Задает соотношение высоты к ширине */
-        // height: 528px;
-        // background-image: url(../../../images/team/portret.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
-        // transform: scale(1);
         flex: 1 0 400px;
-
         @media screen and (max-width: 1110px) {
           background-image: url("../../../images/team/portret1024.svg");
           background-position: center center;
@@ -86,7 +79,6 @@
           width: 100%;
           background-size: cover; 
           flex: 1 0 500px;
-          // transform: scale(1.1);
           }
           @media screen and (max-width: 555px) {
             background-image: url("../../../images/team/portret375.svg");
@@ -94,7 +86,6 @@
             width: 100%;
             background-size: cover; 
             flex: 1 0 500px;
-            // transform: scale(1.1);
             }
         }
 
@@ -108,10 +99,11 @@
     
 
 
-        .team_link {
+        .team_link  {
           @include h3_caps-regular;
           color: $color_active_regular;
           position: relative;
+          text-decoration: none;
       
             &::after {
         
@@ -164,7 +156,7 @@
   align-items: center;
   flex-direction: column;
   background-color: $basic_white;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 
   .blue_points_drei {
     display: flex;

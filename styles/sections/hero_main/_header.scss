@@ -3,150 +3,157 @@
   position: relative;
   background-color: transparent;
   z-index: 5;
-  .header_inner {
-    display: flex;
-    padding: 50px 160px 0 160px;
-
-
-    @media screen and (max-width: 1680px) {
-      padding: 50px 110px 0 110px;
-    }
-
-    @media screen and (max-width: 1440px) {
-      padding: 50px 60px 0 60px;
-    }
-    @media screen and (max-width: 1024px) {
-      padding: 50px 60px 0 60px;
-    }
-    @media screen and (max-width: 768px) {
-      display: block;
-    }
-
-
-    @media screen and (max-width: 375px) {
-      padding: 10px 15px 10px 15px;
-    }
-
-
-    .header_logo {
-      display: block;
-      position: relative;
-      max-width: 130px;
-
+  .container_header {
+    position:absolute;
+    width: 100%;
+    .header_inner {
+      display: flex;
+      padding: 50px 160px 0 160px;
+      @media screen and (max-width: 1680px) {
+        padding: 50px 110px 0 110px;
+      }
+      @media screen and (max-width: 1440px) {
+        padding: 50px 60px 0 60px;
+      }
+      @media screen and (max-width: 1024px) {
+        padding: 50px 60px 0 60px;
+      }
       @media screen and (max-width: 768px) {
-        position:absolute;
-        top:80px;
-      }
-      .logo_name {
-        margin-bottom: 6.5px;
-      }
-    
-    }
-    
-    .header_info {
         display: block;
-        position:relative;
-        margin-left: auto;
-      .header_contacts{
-      display: inline-flex;
-      color: $basic_white;
-      @media screen and (max-width:530px) {
-      justify-content: space-between;
-      width: 100%;
       }
-      .contacts_lang {
-        display: flex;
-        .lang_active {
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          width: 33px;
-          height: 25px;
-          border-radius: 8px;
-          background-color: transparent;
-          &:hover {
-          background-color: $color_accent;
-          }
-          .lang {
-            @include header_lang_uaruen;
-            &:not(:last-child) {
-            margin-right: 14px;
-            }
-          }
-        }
+      @media screen and (max-width: 375px) {
+        padding: 10px 15px 10px 15px;
       }
-      .contacts_date {
-        display: flex;
-        margin-bottom: 16px;
-        .date_addres {
-          display: flex;
-          align-items: center;
-          white-space: nowrap;
-          .kyiv {
-            @media screen and (max-width:538px) {
-              display: none;
-            }
-          }
-          .point {
-            width: 6px;
-            height: 6px;
-            border-radius: 6px;
-            background-color: $basic_white;
-            margin: 0 6px;
-            @media screen and (max-width:538px) {
-              display: none;
-            }
-          }
-          .date_nrphone {
-            @include text_style_700;
-            color: $basic_white;
-            white-space: nowrap;
-            
-          }
-          .fbwhite {
-            @media screen and (max-width:605px) {
-              display: none;
-            }
-          }
-        }
-      }
-      }
-      .header_menu {
+      .header_logo {
+        display: block;
+        position: relative;
+        max-width: 130px;
+  
         @media screen and (max-width: 768px) {
-          display: block;
           position:absolute;
-          top:110px;
+          top:80px;
         }
-        @media screen and (max-width:517px) {
-          display: none;
+        .logo_name {
+          margin-bottom: 6.5px;
         }
-
-
-        ul {
-        display: flex;
-        justify-content: flex-end;
-        li {
-          &:not(:last-child) {
-            margin-right: 15px;
+      }
+  
+      .header_page_indicator {
+        visibility: hidden;
+        .slash {
+          display :none;
+  
+        }
+      }
+      .page_indicator_services {
+        color: $basic_white;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .header_info {
+          display: block;
+          position:relative;
+          margin-left: auto;
+        .header_contacts {
+          display: inline-flex;
+          color: $basic_white;
+  
+          @media screen and (max-width:530px) {
+          justify-content: space-between;
+          width: 100%;
           }
-          a {
-            color: $basic_white;
-            text-decoration: none;
-            white-space: nowrap;
-            &:hover {
-              color: $color_accent;
-              cursor: pointer;
-              transition: background-color 0.3s;
+          .contacts_lang {
+            display: flex;
+            .lang_active {
+              display:flex;
+              justify-content: center;
+              align-items: center;
+              width: 33px;
+              height: 25px;
+              border-radius: 8px;
+              background-color: transparent;
+              &:hover {
+              background-color: $color_accent;
+              }
+              .lang {
+                @include header_lang_uaruen;
+                &:not(:last-child) {
+                margin-right: 14px;
+                }
+              }
             }
           }
-        } 
+          .contacts_date {
+            display: flex;
+            margin-bottom: 16px;
+            .date_addres {
+              display: flex;
+              align-items: center;
+              white-space: nowrap;
+              .kyiv {
+                @media screen and (max-width:538px) {
+                  display: none;
+                }
+              }
+              .point {
+                width: 6px;
+                height: 6px;
+                border-radius: 6px;
+                background-color: $basic_white;
+                margin: 0 6px;
+                @media screen and (max-width:538px) {
+                  display: none;
+                }
+              }
+              .date_nrphone {
+                @include text_style_700;
+                color: $basic_white;
+                white-space: nowrap;
+                text-decoration: none;
+                
+              }
+              .fbwhite {
+                @media screen and (max-width:605px) {
+                  display: none;
+                }
+              }
+            }
+          }
         }
-      
+        .header_menu {
+          @media screen and (max-width: 768px) {
+            display: block;
+            position:absolute;
+            top:110px;
+          }
+          @media screen and (max-width:517px) {
+            display: none;
+          }
+          ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+              &:not(:last-child) {
+                margin-right: 15px;
+              }
+              a {
+                color: $basic_white;
+                text-decoration: none;
+                white-space: nowrap;
+                &:hover {
+                  color: $color_accent;
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+                }
+              }
+            } 
+          }
+        
+        }
       }
     }
   }
-}
-.hero_header .container_header {
-  position:absolute;
-  width: 100%;
 }

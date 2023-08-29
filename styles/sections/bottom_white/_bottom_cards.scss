@@ -19,6 +19,7 @@ background-color: $color_gray_bg;
         position: relative;
         margin-bottom: 10px;
         padding-top: 30px;
+        cursor: pointer;
         &::after {
           // -----------
           padding-top: 30px;
@@ -104,6 +105,7 @@ background-color: $color_gray_bg;
               @include h4_regular;
               font-size: 16px;
               color: $color_active_regular;
+              cursor: pointer;
               &:hover {
                 color: $color_accent;
               }

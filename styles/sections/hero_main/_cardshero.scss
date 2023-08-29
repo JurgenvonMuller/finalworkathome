@@ -6,7 +6,6 @@
       display: block;
       padding: 0 160px 0 160px;
       background-color: transparent;
-
       @media screen and (max-width: 1760px) {
         padding: 0 130px 0 130px;
       }
@@ -16,11 +15,9 @@
       @media screen and (max-width: 1440px) {
         padding: 0 60px 0 60px;
       }
-      
       @media screen and (max-width: 375px) {
         padding: 0 30px 0 30px;
       }
-      
         .inner_cards_title {
           @include hero-red-regular;
           background: $gradient_redtext_heroregular;
@@ -72,7 +69,6 @@
           &:nth-child(3n+3) {
             margin-right: 0;
           }
-      
           @media screen and (max-width: 1321px) {
             flex: 1 1 25%;
           }
@@ -112,13 +108,14 @@
           .card_description{
             display: flex;
             flex-flow: column;
-          
-            
             .cards_title {
               @include h3_caps-regular;
               color: $color_active_regular;
               margin: 30px 0 15px 0;
-              
+              cursor: pointer;
+              &:hover {
+                color: $color_accent;
+              }
             }
             .cards_text {
               @include paragraf;

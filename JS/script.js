@@ -12,4 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
     menu.classList.toggle('active');
   });
 });
+// scroll
+function scrollToParagraph() {
+  const targetParagraph = document.getElementById("public_paragraf");
+  if (targetParagraph) {
+      window.location.href = "#public_paragraf";
+  }
+}
 
