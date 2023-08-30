@@ -86,6 +86,7 @@
             .menu_secondary_active {
               background: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
               background-clip: text;
+              text-decoration: none;
               // только в таком варианте в ХРОМе заработало-----------
               -webkit-text-fill-color: transparent;
               &:hover {

@@ -301,11 +301,15 @@ html {
   white-space: nowrap;
   text-decoration: none;
 }
+.hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .date_nrphone:hover {
+  color: #F0145A;
+}
 .hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .date_nrphone--team_page {
   color: #B3B3BA;
 }
 .hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .fbwhite:hover {
   cursor: pointer;
+  content: url("../../../images/header/facebook_red.svg");
 }
 @media screen and (max-width: 605px) {
   .hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .fbwhite {
@@ -578,6 +582,7 @@ html {
   background: linear-gradient(118deg, #EF8080 0%, #F0145A 100%);
   -webkit-background-clip: text;
           background-clip: text;
+  text-decoration: none;
   -webkit-text-fill-color: transparent;
 }
 .hero_consis .consist_inner .consist_inner_menu ul li .menu_secondary_active:hover {
@@ -1442,6 +1447,7 @@ html {
 }
 .footer .container .footer_inner .footer_adres .footer_adres_fbtel .fb_blue:hover {
   cursor: pointer;
+  content: url("../../../images/header/facebook_red.svg");
 }
 @media screen and (max-width: 600px) {
   .footer .container .footer_inner .footer_adres .footer_adres_fbtel .fb_blue {
@@ -1460,6 +1466,9 @@ html {
   color: #46466E;
   text-decoration: none;
 }
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .tel:hover {
+  color: #F0145A;
+}
 .footer .container .footer_inner .footer_adres .footer_adres_fbtel .mail {
   font-family: Montserrat;
   font-style: normal;
@@ -1469,6 +1478,9 @@ html {
   color: #24A3FF;
   margin-left: 10px;
   text-decoration: none;
+}
+.footer .container .footer_inner .footer_adres .footer_adres_fbtel .mail:hover {
+  color: #F0145A;
 }
 @media screen and (max-width: 600px) {
   .footer .container .footer_inner .footer_adres .footer_adres_fbtel .mail {

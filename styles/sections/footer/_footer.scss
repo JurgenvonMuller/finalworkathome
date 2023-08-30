@@ -24,7 +24,6 @@
         @media screen and (max-width: 700px) {
           justify-content: center;
         }
-
         .footer_adres_onmap {
           display: flex;
           align-items: center;
@@ -57,9 +56,7 @@
           margin-top: 0px;
           align-items: center;
           display: flex;
-          
           @media screen and (max-width: 700px) {
-            // order: 3;
             justify-content: center;
           }
           @media screen and (max-width: 600px) {
@@ -67,13 +64,11 @@
             flex-direction: column;
             align-items: center;
           }
-
-          
-          
           .fb_blue {
             margin-right: 10px;
             &:hover {
               cursor: pointer;
+              content: url("../../../images/header/facebook_red.svg");
             }
             @media screen and (max-width: 600px) {
               margin-right: 0px;
@@ -86,12 +81,19 @@
             margin: 0 10px;
             color: #46466E;
             text-decoration: none;
+            &:hover {
+              color: $color_accent;
+            }
           }
           .mail {
             @include h4_regular;
             color: $color_active_regular;
             margin-left: 10px;
             text-decoration: none;
+            &:hover {
+              color: $color_accent;
+            }
+
 
             @media screen and (max-width: 600px) {
               margin-left: 0px;
@@ -130,7 +132,6 @@
               // text-align: center;
               // margin-left: auto;
             }
-
           }
         }
       }

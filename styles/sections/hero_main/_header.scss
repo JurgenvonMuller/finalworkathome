@@ -98,7 +98,6 @@
             display: block; 
             transform: scale(0.6);            
           }
-          
         }
       }
       .header_info {
@@ -167,6 +166,9 @@
                 color: $basic_white;
                 white-space: nowrap;
                 text-decoration: none;
+                &:hover {
+                  color: $color_accent;
+                }
                 &--team_page {
                   color: #B3B3BA;
                 }
@@ -174,7 +176,7 @@
               .fbwhite {
                 &:hover {
                   cursor: pointer;
-                  // content: url("../../../images/header/facebook_red.svg");
+                  content: url("../../../images/header/facebook_red.svg");
                 }
                 @media screen and (max-width:605px) {
                   display: none;
