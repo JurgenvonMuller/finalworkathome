@@ -97,11 +97,23 @@ html {
   background-color: transparent;
   z-index: 5;
 }
+.hero_header--white {
+  background-color: white;
+  z-index: 0;
+}
 .hero_header .container_header {
   position: absolute;
   width: 100%;
 }
+.hero_header .container_header--team_page {
+  position: relative;
+  width: 100%;
+}
 .hero_header .container_header .header_inner {
+  display: flex;
+  padding: 50px 160px 0 160px;
+}
+.hero_header .container_header .header_inner--team_page {
   display: flex;
   padding: 50px 160px 0 160px;
 }
@@ -125,7 +137,12 @@ html {
     display: block;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 445px) {
+  .hero_header .container_header .header_inner {
+    padding: 10px 15px 10px 15px;
+  }
+}
+@media screen and (width: 375px) {
   .hero_header .container_header .header_inner {
     padding: 10px 15px 10px 15px;
   }
@@ -133,7 +150,7 @@ html {
 .hero_header .container_header .header_inner .header_logo {
   display: block;
   position: relative;
-  max-width: 130px;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .hero_header .container_header .header_inner .header_logo {
@@ -141,22 +158,66 @@ html {
     top: 80px;
   }
 }
-.hero_header .container_header .header_inner .header_logo .logo_name {
+.hero_header .container_header .header_inner .header_logo .logo_indicator {
+  display: flex;
+  align-items: center;
+}
+.hero_header .container_header .header_inner .header_logo .logo_indicator .logo_name {
   margin-bottom: 6.5px;
 }
-.hero_header .container_header .header_inner .header_page_indicator {
-  visibility: hidden;
+@media screen and (max-width: 650px) {
+  .hero_header .container_header .header_inner .header_logo .logo_indicator .logo_name {
+    display: block;
+    transform: scale(0.6);
+    margin-bottom: 2px;
+  }
 }
-.hero_header .container_header .header_inner .header_page_indicator .slash {
+@media screen and (max-width: 520px) {
+  .hero_header .container_header .header_inner .header_logo .logo_indicator .logo_name {
+    margin-right: 160px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero_header .container_header .header_inner .header_logo .logo_indicator .logo_name {
+    margin-right: 0px;
+  }
+}
+.hero_header .container_header .header_inner .header_logo .logo_indicator .slash {
   display: none;
 }
-.hero_header .container_header .header_inner .page_indicator_services {
+.hero_header .container_header .header_inner .header_logo .logo_indicator .slash--team_page {
+  display: block;
+}
+@media screen and (max-width: 450px) {
+  .hero_header .container_header .header_inner .header_logo .logo_indicator .slash {
+    display: block;
+    transform: scale(0.6);
+  }
+}
+.hero_header .container_header .header_inner .header_logo .logo_indicator .page_indicator_services {
   color: #FFF;
   font-family: Montserrat;
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  font-size: 20px;
+  display: none;
+}
+.hero_header .container_header .header_inner .header_logo .logo_indicator .page_indicator_services--team_page {
+  display: block;
+  color: #323264;
+  font-size: 36px;
+}
+@media screen and (max-width: 450px) {
+  .hero_header .container_header .header_inner .header_logo .logo_indicator .page_indicator_services {
+    display: block;
+    margin-right: calc(10% + 10px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero_header .container_header .header_inner .header_logo .logo_law {
+    display: block;
+    transform: scale(0.6);
+  }
 }
 .hero_header .container_header .header_inner .header_info {
   display: block;
@@ -166,6 +227,9 @@ html {
 .hero_header .container_header .header_inner .header_info .header_contacts {
   display: inline-flex;
   color: #FFF;
+}
+.hero_header .container_header .header_inner .header_info .header_contacts--team_page {
+  color: #B3B3BA;
 }
 @media screen and (max-width: 530px) {
   .hero_header .container_header .header_inner .header_info .header_contacts {
@@ -220,6 +284,9 @@ html {
   background-color: #FFF;
   margin: 0 6px;
 }
+.hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .point--team_page {
+  background-color: #B3B3BA;
+}
 @media screen and (max-width: 538px) {
   .hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .point {
     display: none;
@@ -233,6 +300,12 @@ html {
   color: #FFF;
   white-space: nowrap;
   text-decoration: none;
+}
+.hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .date_nrphone--team_page {
+  color: #B3B3BA;
+}
+.hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .fbwhite:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 605px) {
   .hero_header .container_header .header_inner .header_info .header_contacts .contacts_date .date_addres .fbwhite {
@@ -258,15 +331,33 @@ html {
 .hero_header .container_header .header_inner .header_info .header_menu ul li:not(:last-child) {
   margin-right: 15px;
 }
-.hero_header .container_header .header_inner .header_info .header_menu ul li a {
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main {
   color: #FFF;
   text-decoration: none;
   white-space: nowrap;
 }
-.hero_header .container_header .header_inner .header_info .header_menu ul li a:hover {
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main--team_page {
+  color: #B3B3BA;
+}
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main:hover {
   color: #F0145A;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main--team_page {
+  color: #B3B3BA;
+  text-decoration: none;
+}
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main--team_page:hover {
+  text-decoration: none;
+}
+.hero_header .container_header .header_inner .header_info .header_menu ul li .header_menu_main--team_page:hover::after {
+  content: "";
+  display: block;
+  height: 2px; /* Толщина линии */
+  width: 100%; /* Ширина линии */
+  background-color: #F0145A; /* Цвет линии при наведении */
+  transform: translateY(4px); /* Отодвигаем линию на 4px вниз */
 }
 
 .hero_h {
@@ -723,23 +814,21 @@ html {
   color: #FFF;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
+.hamburger {
   display: none;
 }
 @media screen and (max-width: 520px) {
-  header {
+  .hamburger {
     display: flex;
   }
 }
 
 /* Гамбургер иконка */
 .menu-btn {
+  display: block;
   width: 30px;
   height: 30px;
   position: relative;
-  z-index: 2;
   overflow: hidden;
 }
 
@@ -1441,6 +1530,12 @@ header {
   }
 }
 
+.team_page_white_space {
+  width: 100%;
+  height: 60px;
+  background-color: #FFF;
+}
+
 .section_team_main {
   background-color: #FFF;
 }
@@ -1453,7 +1548,7 @@ header {
   display: flex;
   margin: 0 auto;
   text-align: left;
-  padding: 60px 280px;
+  padding: 0 280px;
 }
 @media screen and (max-width: 1600px) {
   .section_team_main .container .team_main_inner .team_main_title {
@@ -1554,12 +1649,16 @@ header {
   flex-direction: column;
 }
 .section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info .team_card_name {
+  text-decoration: none;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   color: #323264;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info .team_card_name:hover {
+  color: #F0145A;
 }
 .section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_info .statment {
   font-family: Montserrat;
@@ -1571,4 +1670,8 @@ header {
 }
 .section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_arrow {
   margin-left: auto;
+}
+.section_team_main .container .team_main_inner .team_main_cards .team_card .card_text .team_card_arrow:hover {
+  cursor: pointer;
+  content: url("../../../images/team_page/arrow_red_active.svg");
 }/*# sourceMappingURL=main.css.map */

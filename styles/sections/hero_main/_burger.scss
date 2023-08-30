@@ -1,23 +1,22 @@
-header {
-	display: flex;
-	justify-content: flex-end;
+.hamburger {
+	// display: flex;
+	// justify-content: flex-end;
 	display: none;
 	@media screen and (max-width:520px) {
 		display: flex;
 	}
-
 }
-
-
 /* Гамбургер иконка */
 .menu-btn {
+	display: block;
 	width: 30px;
 	height: 30px;
 	position: relative;
-	z-index:2;
+	
+	// left: 230%;
+	// z-index:2;
 	overflow: hidden;
 }
-
 .menu-btn span {
 	width: 30px;
 	height: 2px;
@@ -28,14 +27,12 @@ header {
 	background-color: $basic_white;
 	transition: all 0.5s;
 }
-
 .menu-btn span:nth-of-type(2) {
 	top: calc(50% - 10px);
 }
 .menu-btn span:nth-of-type(3) {
 	top: calc(50% + 10px);
 }
-
 /* Меняем гамбургер иконку, когда меню открыто */
 .menu-btn.active span:nth-of-type(1) {
   display: none;
@@ -48,7 +45,6 @@ header {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg); 
 }
-
 /* Меню, которое будет появляться */
 .menu {
 	position: fixed;
@@ -61,15 +57,12 @@ header {
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
 }
-
 .menu.active {
 	transform: translateX(45%);
 }
-
 .menu ul li {
 	list-style-type: none;
 	margin-bottom: 26px;
-  
 	a {
 		color: $basic_white;
 		text-decoration: none;
@@ -79,8 +72,6 @@ header {
 			cursor: pointer;
 			transition: background-color 0.3s;
 			text-decoration: none;
-			}
+		}
 	}
-
-  
 }

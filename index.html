@@ -11,29 +11,42 @@
   <body>
     <div class="hero_main">
       <div class="container">
-        <!-- --обертка с полотном фоновым -->
+        <!-- background gradient with all part on  -->
         <div class="bgc">
-          <!-- -----header ---------------- -->
+          <!-- -----header -------------------------------->
           <div class="hero_header">
             <div class="container_header">
               <div class="header_inner">
                 <div class="header_logo">
-                  <img
-                    class="logo_name"
-                    src="./images/header/Name.svg"
-                    alt="name"
-                  />
-                  <img
-                    class="logo_law"
-                    src="./images/header/LAW COMPANY.svg"
-                    alt="law"
-                  />
+                  <div class="logo_indicator">
+                    <a class="logo_name" href="/index.html">
+                      <img src="./images/header/Name.svg" alt="name"/>
+                    </a>
+                    <img class="slash" src="../images/team_page/team_lash.svg" alt="">
+                    <p class="page_indicator_services">services</p>
+                    <!-- HAMBURGER -->
+                    <nav class="hamburger">
+                    <div class="menu-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="menu">
+                      <nav>
+                        <ul>
+                          <li><a href="#">about us</a></li>
+                          <li><a href="/index.html">services</a></li>
+                          <li><a href="/team.html">team</a></li>
+                          <li><a href="#">publications</a></li>
+                          <li><a href="#">contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    </nav>
+                  <!-- END OF HAMBURGER -->
+                  </div>
+                  <img class="logo_law" src="./images/header/LAW COMPANY.svg" alt="law"/>
                 </div>
-                <div class="header_page_indicator">
-                  <img class="slash" src="../images/team_page/team_lash.svg" alt="">
-                </div>
-                <p class="page_indicator_services">services</p>
-                <div class="header_info">
                 <div class="header_info">
                   <div class="header_contacts">
                     <div class="contacts_lang">
@@ -53,63 +66,31 @@
                         <!-- white point -->
                         <div class="point"></div>
                         <p class="kyiv">Kyiv, Mechnikova str, 14/1</p>
-
                         <!-- white point -->
                         <div class="point"></div>
                         <a class="date_nrphone" href="tel:0800 211 927">0800 211 927</a>
-                        <!-- <p class="date_nrphone">0800 211 927</p> -->
                         <!-- white point -->
                         <div class="point"></div>
-
                         <a href="https://www.facebook.com"> 
                           <img class="fbwhite" src="./images/header/Facebook-Header.svg" alt="Facebook">
                         </a>
-
-                        <!-- <img
-                          class="fbwhite"
-                          src="./images/header/Facebook-Header.svg"
-                          alt="fbwhite"
-                        /> -->
                       </div>
                     </div>
                   </div>
-                  <!-- HAMBURGER -->
-                  <header class="hamburger">
-                    <div class="menu-btn">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-
-                    <div class="menu">
-                      <nav>
-                        <ul>
-                          <li><a href="#">about us</a></li>
-                          <li><a href="/index.html">services</a></li>
-                          <li><a href="/team.html">team</a></li>
-                          <li><a href="#">publications</a></li>
-                          <li><a href="#">contact</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </header>
-                  <!-- END OF HAMBURGER -->
-
-                  <div class="header_menu">
+                  <nav class="header_menu">
                     <ul>
-                      <li><a href="#">about us</a></li>
-                      <li><a href="/index.html">services</a></li>
-                      <li><a href="/team.html">team</a></li>
-                      <li><a href="#">publications</a></li>
-                      <li><a href="#">contact</a></li>
+                      <li><a class="header_menu_main" href="#">about us</a></li>
+                      <li><a class="header_menu_main" href="/index.html">services</a></li>
+                      <li><a class="header_menu_main" href="/team.html">team</a></li>
+                      <li><a class="header_menu_main" href="#">publications</a></li>
+                      <li><a class="header_menu_main" href="#">contact</a></li>
                     </ul>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- ---------image H with title-------- -->
-          <div class="hero_h">
+            <!-- ---------image H with title ----------------->
+            <div class="hero_h">
             <div>
               <div class="svg-container">
                 <div>
@@ -121,9 +102,9 @@
               </div>
               <p class="hero_h_title">you legal solutions provider</p>
             </div>
-          </div>
-          <!-- hero_consist -->
-          <div class="hero_consis">
+            </div>
+            <!------------hero_consistance------------------------->
+            <div class="hero_consis">
             <div class="container">
               <div class="consist_inner">
                 <div class="consist_inner_menu">
@@ -159,9 +140,9 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!--  -------cards with title--------- -->
-          <div class="hero">
+            </div>
+            <!--  -------six cards with title--------- -->
+            <div class="hero">
             <div class="container">
               <div class="hero_inner">
                 <h3 class="inner_servises">servises</h3>
@@ -287,9 +268,10 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
-        <!-- ---------  начало блока TEAM с фотографией  -->
+        <!-- ---------  start white bottom part   -->
         <div class="team">
           <div class="shadow"></div>
           <div class="container">
@@ -323,9 +305,8 @@
             </div>
           </div>
         </div>
-        <!-- кнопочки голубые и надпись THEY ARE ALREADY TRUST -->
-
-        <!-- ----------- блок с компаниями-------------- -->
+        
+        <!-- -----------companies block------------- -->
         <div class="firms">
           <div class="container">
             <div class="firms_inner">
@@ -419,7 +400,7 @@
             </div>
           </div>
         </div>
-        <!-- начало блока с тремя карточками------------------------------------ -->
+        <!-- three cards no the bottom --------------- -->
         <div class="public">
           <div class="container">
             <div class="public_inner">

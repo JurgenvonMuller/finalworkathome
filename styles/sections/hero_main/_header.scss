@@ -3,12 +3,26 @@
   position: relative;
   background-color: transparent;
   z-index: 5;
+  &--white { // Модификатор для белого цвета
+    background-color: white;
+    z-index: 0;
+  }
   .container_header {
     position:absolute;
     width: 100%;
+    &--team_page {
+      position:relative;
+      width: 100%;
+      
+    }
     .header_inner {
       display: flex;
       padding: 50px 160px 0 160px;
+      &--team_page {
+        display: flex;
+        padding: 50px 160px 0 160px;
+        // background-color: rgb(48, 37, 146);
+        }
       @media screen and (max-width: 1680px) {
         padding: 50px 110px 0 110px;
       }
@@ -21,37 +35,71 @@
       @media screen and (max-width: 768px) {
         display: block;
       }
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 445px) {
+        padding: 10px 15px 10px 15px;
+      }
+      @media screen and (width: 375px) {
         padding: 10px 15px 10px 15px;
       }
       .header_logo {
         display: block;
         position: relative;
-        max-width: 130px;
-  
+        width: 100%;
         @media screen and (max-width: 768px) {
           position:absolute;
           top:80px;
         }
-        .logo_name {
-          margin-bottom: 6.5px;
+        .logo_indicator {
+          display: flex;
+          align-items: center;
+          .logo_name {
+            margin-bottom: 6.5px;
+            
+            @media screen and (max-width: 650px) {
+              display: block; 
+              transform: scale(0.6); 
+              margin-bottom: 2px;           
+            }
+            @media screen and (max-width: 520px) {
+              margin-right: 160px;          
+            }
+            @media screen and (max-width: 450px) {
+              margin-right: 0px;          
+            }
+          }
+          .slash {
+            display: none;
+            &--team_page {
+              display: block;
+            }
+            @media screen and (max-width: 450px) {
+              display: block; 
+              transform: scale(0.6);            
+            }
+          }
+          .page_indicator_services {
+            color: $basic_white;
+            @include text_style_400;
+            font-size: 20px;
+            display:none;
+            &--team_page {
+              display: block;
+              color: #323264;
+              font-size: 36px;
+            }
+            @media screen and (max-width: 450px) {
+              display: block; 
+              margin-right: calc(10% + 10px);
+            }
+          }
         }
-      }
-  
-      .header_page_indicator {
-        visibility: hidden;
-        .slash {
-          display :none;
-  
+        .logo_law {
+          @media screen and (max-width: 450px) {
+            display: block; 
+            transform: scale(0.6);            
+          }
+          
         }
-      }
-      .page_indicator_services {
-        color: $basic_white;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
       }
       .header_info {
           display: block;
@@ -60,7 +108,9 @@
         .header_contacts {
           display: inline-flex;
           color: $basic_white;
-  
+          &--team_page {
+            color: $color_gray_text;
+          }
           @media screen and (max-width:530px) {
           justify-content: space-between;
           width: 100%;
@@ -80,6 +130,7 @@
               }
               .lang {
                 @include header_lang_uaruen;
+                
                 &:not(:last-child) {
                 margin-right: 14px;
                 }
@@ -104,6 +155,9 @@
                 border-radius: 6px;
                 background-color: $basic_white;
                 margin: 0 6px;
+                &--team_page {
+                  background-color: #B3B3BA;
+                }
                 @media screen and (max-width:538px) {
                   display: none;
                 }
@@ -113,9 +167,15 @@
                 color: $basic_white;
                 white-space: nowrap;
                 text-decoration: none;
-                
+                &--team_page {
+                  color: #B3B3BA;
+                }
               }
               .fbwhite {
+                &:hover {
+                  cursor: pointer;
+                  // content: url("../../../images/header/facebook_red.svg");
+                }
                 @media screen and (max-width:605px) {
                   display: none;
                 }
@@ -139,19 +199,36 @@
               &:not(:last-child) {
                 margin-right: 15px;
               }
-              a {
+              .header_menu_main {
                 color: $basic_white;
                 text-decoration: none;
                 white-space: nowrap;
+                &--team_page {
+                  color: $color_gray_text;
+                }
                 &:hover {
                   color: $color_accent;
                   cursor: pointer;
                   transition: background-color 0.3s;
                 }
+                &--team_page {
+                  color: $color_gray_text;
+                  text-decoration: none; 
+                  &:hover {
+                    text-decoration: none;
+                    &::after {
+                      content: "";
+                      display: block;
+                      height: 2px; /* Толщина линии */
+                      width: 100%; /* Ширина линии */
+                      background-color: $color_accent; /* Цвет линии при наведении */
+                      transform: translateY(4px); /* Отодвигаем линию на 4px вниз */
+                    }
+                  }
+                }
               }
             } 
           }
-        
         }
       }
     }
